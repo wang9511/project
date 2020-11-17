@@ -1,0 +1,63 @@
+rule_1: Cache[NODE_1].State = E -> ExGntd = true
+rule_2: Chan2[NODE_1].Cmd = GntE -> ExGntd = true
+rule_3: Cache[NODE_1].State = S -> ExGntd = false
+rule_4: Chan2[NODE_1].Cmd = Inv -> CurCmd != Empty
+rule_5: Chan2[NODE_1].Cmd = GntS -> ExGntd = false
+rule_6: Cache[NODE_1].State = S -> MemData = AuxData
+rule_7: Chan2[NODE_1].Cmd = GntS -> MemData = AuxData
+rule_8: Chan2[NODE_1].Cmd = GntE -> MemData = AuxData
+rule_9: Cache[NODE_1].State = E -> InvSet[NODE_2] = false
+rule_10: Cache[NODE_1].State = E -> ShrSet[NODE_2] = false
+rule_11: InvSet[NODE_1] = true -> Cache[NODE_2].State != E
+rule_12: Chan2[NODE_1].Cmd = GntE -> ShrSet[NODE_2] = false
+rule_13: Chan2[NODE_1].Cmd = GntE -> InvSet[NODE_2] = false
+rule_14: InvSet[NODE_1] = true -> Chan2[NODE_2].Cmd != GntE
+rule_15: Cache[NODE_1].State = E -> Cache[NODE_2].State = I
+rule_16: Chan2[NODE_1].Cmd = GntE -> Cache[NODE_2].State = I
+rule_17: Cache[NODE_1].State = E -> Cache[NODE_2].State != E
+rule_18: Cache[NODE_1].State = E -> Cache[NODE_2].State != S
+rule_19: Cache[NODE_1].State = S -> Cache[NODE_2].State != E
+rule_20: Chan2[NODE_1].Cmd = Inv -> Cache[NODE_2].State != E
+rule_21: Cache[NODE_1].State = E -> Chan2[NODE_2].Cmd != Inv
+rule_22: Cache[NODE_1].State = E -> Chan3[NODE_2].Cmd = Empty
+rule_23: Cache[NODE_1].State = S -> Chan2[NODE_2].Cmd != GntE
+rule_24: Cache[NODE_1].State = E -> Chan2[NODE_2].Cmd != GntS
+rule_25: Chan2[NODE_1].Cmd = GntS -> Cache[NODE_2].State != E
+rule_26: Chan2[NODE_1].Cmd = GntE -> Chan2[NODE_2].Cmd != Inv
+rule_27: Chan2[NODE_1].Cmd = Inv -> Chan2[NODE_2].Cmd != GntE
+rule_28: Cache[NODE_1].State = E -> Chan2[NODE_2].Cmd = Empty
+rule_29: Cache[NODE_1].State = E -> Chan2[NODE_2].Cmd != GntE
+rule_30: Chan2[NODE_1].Cmd = GntE -> Cache[NODE_2].State != S
+rule_31: Chan2[NODE_1].Cmd = GntE -> Cache[NODE_2].State != E
+rule_32: Chan2[NODE_1].Cmd = GntE -> Chan2[NODE_2].Cmd = Empty
+rule_33: Chan2[NODE_1].Cmd = GntS -> Chan2[NODE_2].Cmd != GntE
+rule_34: Chan2[NODE_1].Cmd = GntE -> Chan2[NODE_2].Cmd != GntS
+rule_35: Chan2[NODE_1].Cmd = GntE -> Chan3[NODE_2].Cmd = Empty
+rule_36: Chan2[NODE_1].Cmd = GntE -> Chan2[NODE_2].Cmd != GntE
+rule_37: Chan3[NODE_1].Cmd = InvAck -> Cache[NODE_2].State != E
+rule_38: Cache[NODE_1].State = E -> Chan3[NODE_2].Cmd != InvAck
+rule_39: Chan2[NODE_1].Cmd = GntE -> Chan3[NODE_2].Cmd != InvAck
+rule_40: Chan3[NODE_1].Cmd = InvAck -> Chan2[NODE_2].Cmd != GntE
+rule_41: ExGntd = true & InvSet[NODE_1] = true -> CurCmd != Empty
+rule_42: ExGntd = true & InvSet[NODE_1] = true -> ShrSet[NODE_2] = false
+rule_43: ExGntd = true & InvSet[NODE_1] = true -> InvSet[NODE_2] = false
+rule_44: ExGntd = true & InvSet[NODE_1] = true -> Cache[NODE_2].State = I
+rule_45: CurCmd = ReqS & InvSet[NODE_1] = true -> Chan2[NODE_2].Cmd != Inv
+rule_46: ExGntd = true & InvSet[NODE_1] = true -> Chan2[NODE_2].Cmd != Inv
+rule_47: ExGntd = true & InvSet[NODE_1] = true -> Chan2[NODE_2].Cmd = Empty
+rule_48: CurCmd = ReqS & InvSet[NODE_1] = true -> Chan3[NODE_2].Cmd = Empty
+rule_49: ExGntd = true & InvSet[NODE_1] = true -> Chan3[NODE_2].Cmd = Empty
+rule_50: Cache[NODE_1].State != E & Chan2[NODE_1].Cmd = Inv -> CurCmd = ReqE
+rule_51: ExGntd = true & InvSet[NODE_1] = true -> Chan3[NODE_2].Cmd != InvAck
+rule_52: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> ShrSet[NODE_2] = false
+rule_53: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> InvSet[NODE_2] = false
+rule_54: Cache[NODE_1].State != E & Chan2[NODE_1].Cmd = Inv -> ExGntd = false
+rule_55: Cache[NODE_1].State != E & Chan2[NODE_1].Cmd = Inv -> CurCmd != ReqS
+rule_56: CurCmd = ReqS & InvSet[NODE_1] = true -> Chan3[NODE_2].Cmd != InvAck
+rule_57: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Cache[NODE_2].State = I
+rule_58: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Chan2[NODE_2].Cmd != Inv
+rule_59: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Chan3[NODE_2].Cmd = Empty
+rule_60: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Chan2[NODE_2].Cmd = Empty
+rule_61: Cache[NODE_1].State != E & Chan2[NODE_1].Cmd = Inv -> MemData = AuxData
+rule_62: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Chan3[NODE_2].Cmd != InvAck
+rule_63: ExGntd = true & Chan3[NODE_1].Cmd = InvAck -> Chan3[NODE_1].Data = AuxData

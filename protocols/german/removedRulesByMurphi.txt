@@ -1,0 +1,938 @@
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1140"
+		(i != j) ->	(Chan2[i].Cmd = GntS & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_561"
+		(i != j) ->	(Chan2[i].Cmd != Empty & ShrSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_653"
+		(i != j) ->	(Chan2[i].Data = AuxData & InvSet[i] = false -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1419"
+		(i != j) ->	(Chan2[i].Cmd = GntS & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1074"
+		(i != j) ->	(Chan2[i].Data = AuxData & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1031"
+		(i != j) ->	(Chan2[i].Data = AuxData & ShrSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_734"
+		(i != j) ->	(Chan2[i].Cmd != Empty & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_428"
+		(i != j) ->	(Chan2[i].Data = AuxData & ShrSet[j] = false -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_476"
+		(i != j) ->	(Chan2[i].Cmd = GntS & InvSet[i] = false -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_552"
+		(i != j) ->	(Chan2[i].Cmd = GntS & InvSet[i] = false -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1422"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> Chan2[i].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1168"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> ShrSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_491"
+		(i != j) ->	(ShrSet[j] = false & ShrSet[i] = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_678"
+		(i != j) ->	(Chan2[i].Data = AuxData & InvSet[j] = false -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_973"
+		(i != j) ->	(Chan2[i].Data = AuxData & InvSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1472"
+		(i != j) ->	(Chan2[i].Data = AuxData & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_947"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> ShrSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_828"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> Chan2[i].Cmd = Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_554"
+		(i != j) ->	(ShrSet[i] = true & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1011"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> Chan2[i].Cmd = Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_597"
+		(i != j) ->	(Chan2[i].Cmd = GntS & InvSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_460"
+		(i != j) ->	(Chan2[i].Cmd = GntS & InvSet[j] = false -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_581"
+		(i != j) ->	(Chan2[i].Cmd != Empty & InvSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_479"
+		(i != j) ->	(ShrSet[j] = false & InvSet[i] = false -> Chan2[i].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_354"
+		(i != j) ->	(ShrSet[i] = true & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_437"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> Chan2[i].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1181"
+		(i != j) ->	(Chan2[i].Cmd = GntS & ShrSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_664"
+		(i != j) ->	(Chan2[i].Cmd = GntS & ShrSet[j] = false -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1033"
+		(i != j) ->	(Chan2[i].Cmd != Empty & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_497"
+		(i != j) ->	(InvSet[j] = false & ShrSet[i] = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_436"
+		(i != j) ->	(InvSet[j] = false & InvSet[i] = false -> Chan2[i].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_906"
+		(i != j) ->	(Chan2[i].Data = AuxData & InvSet[i] = false -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_618"
+	(Chan2[i].Cmd != Empty & ExGntd = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1142"
+	(ExGntd = true & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_480"
+	(ExGntd = true & Chan2[i].Data = AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1358"
+	(Chan2[i].Cmd != Empty & Chan2[i].Cmd != GntS -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1149"
+	(Chan2[i].Data = AuxData & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_463"
+	(ExGntd = true & CurCmd = Empty -> ShrSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_86"
+	(Chan2[i].Cmd = GntE -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_540"
+	(ShrSet[j] = false & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_742"
+	(ExGntd = true & Chan2[i].Data = AuxData -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_867"
+	(ShrSet[i] = true & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_874"
+	(ExGntd = true & ShrSet[j] = false -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_135"
+	(Chan2[i].Cmd = GntE -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_925"
+	(Chan2[i].Data = AuxData & CurCmd = Empty -> Chan2[i].Cmd = GntS);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_882"
+	(ExGntd = true & ShrSet[i] = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1315"
+	(Chan2[i].Data = AuxData & InvSet[i] = false -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1187"
+	(Chan2[i].Data = AuxData & Chan2[i].Cmd != GntS -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_808"
+	(Chan2[i].Cmd != Empty & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_745"
+	(ExGntd = true & CurCmd = Empty -> Chan2[i].Cmd = Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_273"
+	(CurCmd = Empty -> Chan2[i].Cmd != GntE);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1362"
+	(Chan2[i].Data = AuxData & Chan2[i].Cmd != GntS -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_409"
+	(Chan2[i].Data = AuxData & InvSet[i] = false -> Chan2[i].Cmd = GntS);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_418"
+	(CurCmd != ReqS & CurCmd != ReqE -> Chan2[i].Cmd != GntE);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_146"
+	(InvSet[i] = false -> Chan2[i].Cmd != GntE);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_372"
+		(i != j) ->	(InvSet[j] = false & Cache[i].Data = AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_954"
+		(i != j) ->	(InvSet[j] = false & Cache[i].State = S -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1059"
+		(i != j) ->	(ShrSet[j] = false & Cache[i].State = S -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_527"
+		(i != j) ->	(InvSet[j] = false & Cache[i].State != I -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_589"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> Cache[i].State = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1318"
+		(i != j) ->	(Cache[i].Data = AuxData & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_748"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> Cache[i].State = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1175"
+		(i != j) ->	(ShrSet[j] = false & Cache[i].Data = AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_907"
+		(i != j) ->	(Cache[i].State = S & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_443"
+		(i != j) ->	(Cache[i].Data = AuxData & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1133"
+		(i != j) ->	(Cache[i].State = S & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_674"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> Cache[i].State != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_505"
+		(i != j) ->	(ShrSet[j] = false & Cache[i].State != I -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_565"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> Cache[i].State != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_605"
+		(i != j) ->	(Cache[i].State != I & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_549"
+		(i != j) ->	(Cache[i].State != I & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_818"
+	(InvSet[i] = false & Cache[i].State = E -> Chan2[i].Cmd = Inv);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_686"
+	(ExGntd = true & Cache[i].Data = AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_750"
+	(ExGntd = true & CurCmd = Empty -> Cache[i].State = I);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1389"
+	(CurCmd != ReqS & CurCmd != ReqE -> Cache[i].State != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_568"
+	(Cache[i].State != I & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_668"
+	(Cache[i].Data = AuxData & CurCmd = Empty -> ExGntd = false);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1342"
+	(Cache[i].Data = AuxData & Cache[i].State != S -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1568"
+	(Cache[i].Data = AuxData & CurCmd = Empty -> Cache[i].State = S);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_515"
+	(Chan2[i].Cmd = Empty & Cache[i].State = E -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_962"
+	(Chan2[i].Cmd != Inv & InvSet[i] = false -> Cache[i].State != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_614"
+	(Cache[i].State != S & Cache[i].State != I -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1412"
+	(Chan2[i].Cmd = Empty & InvSet[i] = false -> Cache[i].State != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1072"
+	(Chan2[i].Cmd != Inv & Cache[i].State = E -> InvSet[i] = true);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_239"
+	(Cache[i].State = E -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1338"
+	(ExGntd = true & Cache[i].State != I -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1470"
+	(InvSet[i] = false & Cache[i].State = E -> Chan2[i].Cmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_45"
+	(CurCmd = Empty -> Cache[i].State != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1390"
+	(Cache[i].State != I & MemData != AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1038"
+	(CurCmd = Empty & MemData != AuxData -> Cache[j].State != I);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1257"
+	(Cache[i].Data = AuxData & MemData != AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1268"
+	(CurCmd = Empty & MemData != AuxData -> Cache[j].Data = AuxData);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_826"
+	(ShrSet[j] = false & MemData != AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1483"
+	(CurCmd = Empty & MemData != AuxData -> Cache[i].State = I);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1026"
+	(Cache[j].State = I & CurCmd = Empty -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1372"
+	(MemData != AuxData & Cache[j].State != E -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_851"
+	(CurCmd = Empty & MemData != AuxData -> ShrSet[i] = false);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1019"
+	(Cache[j].State = I & MemData != AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1077"
+	(ShrSet[j] = false & CurCmd = Empty -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_883"
+	(Cache[i].Data = AuxData & CurCmd = Empty -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_1174"
+	(CurCmd = Empty & Cache[j].State != E -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_922"
+	(ShrSet[i] = true & MemData != AuxData -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_918"
+	(ShrSet[i] = true & CurCmd = Empty -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_1094"
+	(Cache[i].State != I & CurCmd = Empty -> MemData = AuxData);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_757"
+	(CurCmd = Empty & MemData != AuxData -> Cache[j].State = E);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_920"
+	(CurCmd = Empty & MemData != AuxData -> ShrSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_988"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> Chan2[i].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_710"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> ShrSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_687"
+		(i != j) ->	(Chan2[j].Cmd = GntS & ShrSet[i] = true -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_769"
+		(i != j) ->	(Chan2[i].Cmd = GntS & Chan2[j].Cmd = GntS -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_713"
+		(i != j) ->	(Chan2[i].Data = AuxData & InvSet[j] = false -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1148"
+		(i != j) ->	(Chan2[i].Cmd != Empty & Chan2[j].Cmd = GntS -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_469"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> InvSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_726"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[i] = true -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_637"
+		(i != j) ->	(InvSet[j] = false & InvSet[i] = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_470"
+		(i != j) ->	(Chan2[j].Cmd = GntS & Chan2[i].Data = AuxData -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_574"
+		(i != j) ->	(InvSet[j] = false & InvSet[i] = true -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_604"
+		(i != j) ->	(InvSet[j] = false & ShrSet[i] = true -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_785"
+		(i != j) ->	(InvSet[j] = false & CurCmd = Empty -> InvSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1230"
+		(i != j) ->	(Chan2[i].Cmd = GntS & InvSet[j] = false -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1265"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> Chan2[i].Cmd = Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1273"
+		(i != j) ->	(Chan2[i].Cmd != Empty & InvSet[j] = false -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_952"
+		(i != j) ->	(InvSet[i] = true & CurCmd = Empty -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_644"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> Cache[i].State = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1386"
+		(i != j) ->	(Chan2[j].Cmd = GntS & InvSet[j] = false -> Cache[i].State != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1424"
+		(i != j) ->	(InvSet[j] = false & Cache[i].State != I -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_506"
+		(i != j) ->	(Chan2[j].Cmd = GntS & Cache[i].Data = AuxData -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_512"
+		(i != j) ->	(InvSet[j] = false & Cache[i].Data = AuxData -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_413"
+		(i != j) ->	(Chan2[j].Cmd = GntS & Cache[i].State != I -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_627"
+		(i != j) ->	(InvSet[j] = false & Cache[i].State = S -> Chan2[j].Cmd != GntS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_412"
+		(i != j) ->	(Chan2[j].Cmd = GntS & Cache[i].State = S -> InvSet[j] = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_700"
+		(i != j) ->	(ShrSet[j] = false & CurCmd = Empty -> InvSet[i] = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_797"
+		(i != j) ->	(ShrSet[j] = false & InvSet[i] = true -> CurCmd != Empty);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_859"
+		(i != j) ->	(InvSet[i] = true & CurCmd = Empty -> ShrSet[j] = true);
+endruleset;
+

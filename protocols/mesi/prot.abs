@@ -1,0 +1,99 @@
+
+
+n_t1:
+[i], NoAbstractRule
+
+n_t2:
+[i],n_ABS_t2_NODE_1,
+[rule_32,rule_8,rule_9,rule_31],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_32"
+		(i != j) ->	(state[i] = I -> state[i] != M);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_8"
+		(i != j) ->	(state[i] = I -> state[i] != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_9"
+		(i != j) ->	(state[i] = I -> state[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_31"
+		(i != j) ->	(state[i] = I -> state[i] = I);
+endruleset;
+
+
+n_t3:
+[i],n_ABS_t3_NODE_1,
+[rule_15,rule_18,rule_21,rule_29],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_15"
+		(i != j) ->	(state[i] = S -> state[i] = S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_18"
+		(i != j) ->	(state[i] = S -> state[i] != M);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_21"
+		(i != j) ->	(state[i] = S -> state[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_29"
+		(i != j) ->	(state[i] = S -> state[i] != I);
+endruleset;
+
+
+n_t4:
+[i],n_ABS_t4_NODE_1,
+[rule_13,rule_16,rule_27,rule_28],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_13"
+		(i != j) ->	(state[i] = M -> state[i] != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_16"
+		(i != j) ->	(state[i] = M -> state[i] != M);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_27"
+		(i != j) ->	(state[i] = M -> state[i] = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_28"
+		(i != j) ->	(state[i] = M -> state[i] != E);
+endruleset;

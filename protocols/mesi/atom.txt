@@ -1,0 +1,8 @@
+state[NODE_1] = I
+state[NODE_1] = S
+state[NODE_1] = M
+state[NODE_1] = E
+state[NODE_2] = I
+state[NODE_2] = S
+state[NODE_2] = M
+state[NODE_2] = E

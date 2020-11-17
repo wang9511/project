@@ -1,0 +1,20 @@
+-- Auxiliary invariants used by Crit:
+x = true -> n[NODE_2].st != C
+x = true -> n[NODE_2].st != E
+
+-- Auxiliary invariants used by Exit:
+n[NODE_1].st = C -> n[NODE_2].st != C
+n[NODE_1].st = C -> x = false
+n[NODE_1].st = C -> n[NODE_2].st != E
+
+-- Auxiliary invariants used by Idle:
+n[NODE_1].st = E -> n[NODE_2].st != E
+n[NODE_1].st = E -> n[NODE_1].data = auxDATA
+n[NODE_1].st = E -> n[NODE_2].st != C
+n[NODE_1].st = E -> x = false
+
+-- Auxiliary invariants used by Store:
+n[NODE_1].st = C -> n[NODE_2].st != C
+n[NODE_1].st = C -> x = false
+n[NODE_1].st = C -> n[NODE_2].st != E
+

@@ -1,0 +1,360 @@
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] = S
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] = S
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != M
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] = S
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] != E
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] != S
+state[NODE_1] = M -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t1:
+state[NODE_1] = E -> state[NODE_2] = I
+state[NODE_1] = E -> state[NODE_2] != S
+state[NODE_1] = E -> state[NODE_2] != M
+state[NODE_1] = E -> state[NODE_2] != E
+
+-- Auxiliary invariants used by t2:
+state[NODE_1] = I -> state[NODE_2] != E
+state[NODE_1] = I -> state[NODE_2] != S
+state[NODE_1] = I -> state[NODE_2] != M
+state[NODE_1] = I -> state[NODE_2] = I
+
+-- Auxiliary invariants used by t3:
+state[NODE_1] = S -> state[NODE_2] != E
+state[NODE_1] = S -> state[NODE_2] = S
+state[NODE_1] = S -> state[NODE_2] != I
+state[NODE_1] = S -> state[NODE_2] != M
+
+-- Auxiliary invariants used by t4:
+state[NODE_1] = M -> state[NODE_2] != E
+state[NODE_1] = M -> state[NODE_2] != M
+state[NODE_1] = M -> state[NODE_2] = I
+state[NODE_1] = M -> state[NODE_2] != S
+

@@ -1,0 +1,9 @@
+rule_1: x = true -> n[NODE_2].st != C
+rule_2: n[NODE_1].st = E -> x = false
+rule_3: n[NODE_1].st = C -> x = false
+rule_4: x = true -> n[NODE_2].st != E
+rule_5: n[NODE_1].st = C -> n[NODE_2].st != E
+rule_6: n[NODE_1].st = E -> n[NODE_2].st != E
+rule_7: n[NODE_1].st = C -> n[NODE_2].st != C
+rule_8: n[NODE_1].st = E -> n[NODE_2].st != C
+rule_9: n[NODE_1].st = E -> n[NODE_1].data = auxDATA

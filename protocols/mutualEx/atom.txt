@@ -1,0 +1,13 @@
+n[NODE_1] = C
+n[NODE_1] = T
+n[NODE_1] = I
+n[NODE_1] = E
+n[NODE_2] = C
+n[NODE_2] = T
+n[NODE_2] = I
+n[NODE_2] = E
+x = true
+x = false
+
+
+

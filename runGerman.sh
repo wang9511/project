@@ -1,0 +1,1 @@
+python3 main.py -p german -a NODE -n 2 -k 3 -r y -all

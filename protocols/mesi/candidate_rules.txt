@@ -1,0 +1,16 @@
+rule_1: state[NODE_1] = S -> state[NODE_2] = S
+rule_2: state[NODE_1] = E -> state[NODE_2] = I
+rule_3: state[NODE_1] = I -> state[NODE_2] = I
+rule_4: state[NODE_1] = M -> state[NODE_2] = I
+rule_5: state[NODE_1] = I -> state[NODE_2] != M
+rule_6: state[NODE_1] = E -> state[NODE_2] != S
+rule_7: state[NODE_1] = E -> state[NODE_2] != M
+rule_8: state[NODE_1] = S -> state[NODE_2] != I
+rule_9: state[NODE_1] = S -> state[NODE_2] != M
+rule_10: state[NODE_1] = M -> state[NODE_2] != M
+rule_11: state[NODE_1] = M -> state[NODE_2] != S
+rule_12: state[NODE_1] = M -> state[NODE_2] != E
+rule_13: state[NODE_1] = S -> state[NODE_2] != E
+rule_14: state[NODE_1] = E -> state[NODE_2] != E
+rule_15: state[NODE_1] = I -> state[NODE_2] != E
+rule_16: state[NODE_1] = I -> state[NODE_2] != S

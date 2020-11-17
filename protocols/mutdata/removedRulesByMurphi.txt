@@ -1,0 +1,315 @@
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_57"
+		(i != j) ->	(n[j].st != T & x = true -> n[i].st = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_30"
+		(i != j) ->	(n[j].st = I -> n[i].st = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_56"
+		(i != j) ->	(n[j].st = I -> n[i].st != T);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_64"
+		(i != j) ->	(n[i].st = T & n[j].st != T -> x = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_61"
+		(i != j) ->	(x = true & n[i].st != I -> n[j].st = T);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_59"
+		(i != j) ->	(n[i].st = T & x = true -> n[j].st = T);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_60"
+		(i != j) ->	(n[j].st != T & n[i].st != I -> x = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_38"
+		(i != j) ->	(n[i].st != I -> n[j].st != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_36"
+		(i != j) ->	(n[i].st = T -> n[j].st != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_62"
+		(i != j) ->	(n[j].st != T & x = true -> n[i].st != T);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_17"
+	(x = false -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_20"
+		(i != j) ->	(n[j].st != C -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_35"
+	(n[i].data = auxDATA -> n[i].st != C);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_8"
+	(n[j].st = I -> x = true);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_7"
+	(x = false -> n[j].st != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_43"
+		(i != j) ->	(n[j].data = auxDATA -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_1"
+		(i != j) ->	(n[j].st != E -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_45"
+		(i != j) ->	(n[j].st = I -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_24"
+		(i != j) ->	(n[j].st != T -> n[i].st != C);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_58"
+	(n[j].st != E & n[j].st != C -> x = true);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_4"
+		(i != j) ->	(n[i].st != I -> n[j].data = auxDATA);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_28"
+	(n[j].data != auxDATA -> n[j].st = T);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_53"
+	(n[j].st != T -> n[j].data = auxDATA);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_42"
+	(n[j].st = I -> n[j].data = auxDATA);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_26"
+	(x = false -> n[j].data = auxDATA);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_41"
+		(i != j) ->	(n[j].data != auxDATA -> n[i].st = I);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_18"
+	(n[j].data != auxDATA -> x = true);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_14"
+	(n[j].data != auxDATA -> n[j].st != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_2"
+		(i != j) ->	(n[j].data != auxDATA -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_12"
+	(x = false -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_51"
+		(i != j) ->	(n[j].st != E -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_33"
+		(i != j) ->	(n[j].st != T -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_54"
+		(i != j) ->	(n[j].st = I -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_40"
+		(i != j) ->	(n[j].st != C -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_16"
+	(n[i].data = auxDATA -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_34"
+		(i != j) ->	(n[j].data = auxDATA -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_13"
+		(i != j) ->	(n[j].st != I -> n[i].st != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_11"
+		(i != j) ->	(n[j].st = T -> n[i].st != C);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_50"
+	(n[j].st = T -> x = true);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_6"
+	(x = false -> n[j].st != T);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_23"
+		(i != j) ->	(n[j].data != auxDATA -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_44"
+		(i != j) ->	(n[j].st = T -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_32"
+		(i != j) ->	(n[j].st != I -> n[i].st != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_5"
+		(i != j) ->	(n[i].st = T -> n[j].data = auxDATA);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_47"
+		(i != j) ->	(n[j].data != auxDATA -> n[i].st != T);
+endruleset;
+

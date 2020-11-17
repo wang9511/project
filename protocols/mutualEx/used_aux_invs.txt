@@ -1,0 +1,112 @@
+-- Auxiliary invariants used by Try:
+n[NODE_1] = I -> x = true
+n[NODE_1] = I -> n[NODE_2] != E
+n[NODE_1] = I -> n[NODE_2] != T
+n[NODE_1] = I -> n[NODE_2] != C
+n[NODE_1] = I -> n[NODE_2] = I
+
+-- Auxiliary invariants used by Crit:
+n[NODE_1] = T -> n[NODE_2] != I
+n[NODE_1] = T & x = true -> n[NODE_2] != C
+n[NODE_1] = T -> n[NODE_2] != E
+n[NODE_1] = T & x = true -> n[NODE_2] != E
+n[NODE_1] = T -> n[NODE_2] != C
+x = true -> n[NODE_2] != C
+x = true -> n[NODE_2] != E
+n[NODE_1] = T & x = true -> n[NODE_2] != I
+n[NODE_1] = T & x = true -> n[NODE_2] = T
+
+-- Auxiliary invariants used by Exit:
+n[NODE_1] = C -> n[NODE_2] != E
+n[NODE_1] = C -> x = false
+n[NODE_1] = C -> n[NODE_2] != C
+
+-- Auxiliary invariants used by Idle:
+n[NODE_1] = E -> x = false
+n[NODE_1] = E -> n[NODE_2] != C
+n[NODE_1] = E -> n[NODE_2] != E
+
+-- Auxiliary invariants used by Try:
+n[NODE_1] = I -> n[NODE_2] != T
+n[NODE_1] = I -> x = true
+n[NODE_1] = I -> n[NODE_2] = I
+n[NODE_1] = I -> n[NODE_2] != E
+n[NODE_1] = I -> n[NODE_2] != C
+
+-- Auxiliary invariants used by Crit:
+x = true & n[NODE_1] = T -> n[NODE_2] != E
+x = true & n[NODE_1] = T -> n[NODE_2] = T
+x = true -> n[NODE_2] != C
+x = true -> n[NODE_2] != E
+x = true & n[NODE_1] = T -> n[NODE_2] != I
+n[NODE_1] = T -> n[NODE_2] != I
+x = true & n[NODE_1] = T -> n[NODE_2] != C
+n[NODE_1] = T -> n[NODE_2] != C
+n[NODE_1] = T -> n[NODE_2] != E
+
+-- Auxiliary invariants used by Exit:
+n[NODE_1] = C -> n[NODE_2] != E
+n[NODE_1] = C -> x = false
+n[NODE_1] = C -> n[NODE_2] != C
+
+-- Auxiliary invariants used by Idle:
+n[NODE_1] = E -> x = false
+n[NODE_1] = E -> n[NODE_2] != C
+n[NODE_1] = E -> n[NODE_2] != E
+
+-- Auxiliary invariants used by Try:
+n[NODE_1] = I -> x = true
+n[NODE_1] = I -> n[NODE_2] != E
+n[NODE_1] = I -> n[NODE_2] = I
+n[NODE_1] = I -> n[NODE_2] != C
+n[NODE_1] = I -> n[NODE_2] != T
+
+-- Auxiliary invariants used by Crit:
+n[NODE_1] = T -> n[NODE_2] != E
+x = true & n[NODE_1] = T -> n[NODE_2] != E
+x = true -> n[NODE_2] != C
+x = true -> n[NODE_2] != E
+n[NODE_1] = T -> n[NODE_2] != C
+x = true & n[NODE_1] = T -> n[NODE_2] != C
+x = true & n[NODE_1] = T -> n[NODE_2] = T
+n[NODE_1] = T -> n[NODE_2] != I
+x = true & n[NODE_1] = T -> n[NODE_2] != I
+
+-- Auxiliary invariants used by Exit:
+n[NODE_1] = C -> n[NODE_2] != C
+n[NODE_1] = C -> x = false
+n[NODE_1] = C -> n[NODE_2] != E
+
+-- Auxiliary invariants used by Idle:
+n[NODE_1] = E -> n[NODE_2] != C
+n[NODE_1] = E -> n[NODE_2] != E
+n[NODE_1] = E -> x = false
+
+-- Auxiliary invariants used by Try:
+n[NODE_1] = I -> n[NODE_2] != C
+n[NODE_1] = I -> n[NODE_2] != E
+n[NODE_1] = I -> n[NODE_2] = I
+n[NODE_1] = I -> n[NODE_2] != T
+n[NODE_1] = I -> x = true
+
+-- Auxiliary invariants used by Crit:
+x = true & n[NODE_1] = T -> n[NODE_2] != I
+x = true -> n[NODE_2] != E
+n[NODE_1] = T -> n[NODE_2] != E
+x = true & n[NODE_1] = T -> n[NODE_2] != E
+n[NODE_1] = T -> n[NODE_2] != C
+x = true -> n[NODE_2] != C
+n[NODE_1] = T -> n[NODE_2] != I
+x = true & n[NODE_1] = T -> n[NODE_2] = T
+x = true & n[NODE_1] = T -> n[NODE_2] != C
+
+-- Auxiliary invariants used by Exit:
+n[NODE_1] = C -> n[NODE_2] != E
+n[NODE_1] = C -> n[NODE_2] != C
+n[NODE_1] = C -> x = false
+
+-- Auxiliary invariants used by Idle:
+n[NODE_1] = E -> n[NODE_2] != E
+n[NODE_1] = E -> x = false
+n[NODE_1] = E -> n[NODE_2] != C
+

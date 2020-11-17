@@ -1,0 +1,358 @@
+rule_1: state[NODE_1] = E -> state[NODE_2] = I
+rule_2: state[NODE_1] = M -> state[NODE_2] = I
+rule_3: state[NODE_1] = I -> state[NODE_2] = I
+rule_4: state[NODE_2] = S -> state[NODE_1] = S
+rule_5: state[NODE_2] != I -> state[NODE_1] = S
+rule_6: state[NODE_2] != I -> state[NODE_2] = S
+rule_7: state[NODE_2] = S -> state[NODE_2] != I
+rule_8: state[NODE_2] = I -> state[NODE_2] != E
+rule_9: state[NODE_2] = I -> state[NODE_2] != M
+rule_10: state[NODE_1] != S -> state[NODE_2] = I
+rule_11: state[NODE_2] = I -> state[NODE_2] != S
+rule_12: state[NODE_2] != S -> state[NODE_2] = I
+rule_13: state[NODE_1] = E -> state[NODE_2] != E
+rule_14: state[NODE_1] = M -> state[NODE_2] != E
+rule_15: state[NODE_1] = I -> state[NODE_2] != E
+rule_16: state[NODE_1] = S -> state[NODE_2] != E
+rule_17: state[NODE_2] = S -> state[NODE_2] != E
+rule_18: state[NODE_1] = M -> state[NODE_1] != E
+rule_19: state[NODE_1] = I -> state[NODE_1] != E
+rule_20: state[NODE_1] = S -> state[NODE_1] != E
+rule_21: state[NODE_2] = S -> state[NODE_1] != E
+rule_22: state[NODE_1] = E -> state[NODE_2] != M
+rule_23: state[NODE_1] = E -> state[NODE_1] != M
+rule_24: state[NODE_1] = E -> state[NODE_1] != I
+rule_25: state[NODE_1] = E -> state[NODE_1] != S
+rule_26: state[NODE_1] = E -> state[NODE_2] != S
+rule_27: state[NODE_1] = M -> state[NODE_2] != M
+rule_28: state[NODE_1] = I -> state[NODE_2] != M
+rule_29: state[NODE_1] = S -> state[NODE_2] != M
+rule_30: state[NODE_2] = S -> state[NODE_2] != M
+rule_31: state[NODE_1] = I -> state[NODE_1] != M
+rule_32: state[NODE_1] = S -> state[NODE_1] != M
+rule_33: state[NODE_2] = S -> state[NODE_1] != M
+rule_34: state[NODE_1] = M -> state[NODE_1] != I
+rule_35: state[NODE_1] = M -> state[NODE_1] != S
+rule_36: state[NODE_1] = M -> state[NODE_2] != S
+rule_37: state[NODE_1] = S -> state[NODE_1] != I
+rule_38: state[NODE_2] = S -> state[NODE_1] != I
+rule_39: state[NODE_1] = I -> state[NODE_1] != S
+rule_40: state[NODE_1] = I -> state[NODE_2] != S
+rule_41: state[NODE_2] != I -> state[NODE_2] != E
+rule_42: state[NODE_2] != I -> state[NODE_1] != E
+rule_43: state[NODE_2] != I -> state[NODE_2] != M
+rule_44: state[NODE_2] != I -> state[NODE_1] != M
+rule_45: state[NODE_2] != I -> state[NODE_1] != I
+rule_46: state[NODE_1] != E -> state[NODE_2] != E
+rule_47: state[NODE_2] != E -> state[NODE_2] != M
+rule_48: state[NODE_2] != M -> state[NODE_2] != E
+rule_49: state[NODE_1] != M -> state[NODE_2] != E
+rule_50: state[NODE_1] != I -> state[NODE_2] != E
+rule_51: state[NODE_1] != S -> state[NODE_2] != E
+rule_52: state[NODE_2] != S -> state[NODE_2] != E
+rule_53: state[NODE_1] != E -> state[NODE_2] != M
+rule_54: state[NODE_1] != M -> state[NODE_2] != M
+rule_55: state[NODE_1] != I -> state[NODE_2] != M
+rule_56: state[NODE_1] != S -> state[NODE_2] != M
+rule_57: state[NODE_2] != S -> state[NODE_2] != M
+rule_58: state[NODE_1] != S -> state[NODE_2] != S
+rule_59: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_2] = S
+rule_60: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_1] = S
+rule_61: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_2] != I
+rule_62: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_2] != E
+rule_63: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_2] = I
+rule_64: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_2] != E
+rule_65: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_2] = I
+rule_66: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_2] != E
+rule_67: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_2] = I
+rule_68: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_2] != E
+rule_69: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_1] != E
+rule_70: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_2] = I
+rule_71: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_1] != E
+rule_72: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_2] = I
+rule_73: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_1] != E
+rule_74: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_2] != M
+rule_75: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_2] = I
+rule_76: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_1] != M
+rule_77: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_2] = I
+rule_78: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_2] = I
+rule_79: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_1] != I
+rule_80: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_1] != S
+rule_81: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_2] = I
+rule_82: state[NODE_2] = I & state[NODE_1] = E -> state[NODE_2] != S
+rule_83: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_2] = I
+rule_84: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_2] != M
+rule_85: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_2] = I
+rule_86: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_2] != M
+rule_87: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_2] = I
+rule_88: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_2] != M
+rule_89: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_1] != M
+rule_90: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_2] = I
+rule_91: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_1] != M
+rule_92: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_2] = I
+rule_93: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_1] != I
+rule_94: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_1] != S
+rule_95: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_2] = I
+rule_96: state[NODE_2] = I & state[NODE_1] = M -> state[NODE_2] != S
+rule_97: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_2] = I
+rule_98: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_1] != I
+rule_99: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_1] != S
+rule_100: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_2] = I
+rule_101: state[NODE_2] = I & state[NODE_1] = I -> state[NODE_2] != S
+rule_102: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_2] = I
+rule_103: state[NODE_2] = I & state[NODE_1] = S -> state[NODE_2] != S
+rule_104: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_2] = I
+rule_105: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_1] = S
+rule_106: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_2] != E
+rule_107: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_1] != E
+rule_108: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_1] = S
+rule_109: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_2] != M
+rule_110: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_1] = S
+rule_111: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_1] != M
+rule_112: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_1] = S
+rule_113: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_1] = S
+rule_114: state[NODE_1] = S & state[NODE_2] = S -> state[NODE_1] != I
+rule_115: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_1] = S
+rule_116: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_2] != E
+rule_117: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_2] = S
+rule_118: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_2] != E
+rule_119: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_2] != I
+rule_120: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_1] != E
+rule_121: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_1] = S
+rule_122: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_2] = S
+rule_123: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_1] != E
+rule_124: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_2] != I
+rule_125: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_2] != M
+rule_126: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_1] = S
+rule_127: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_2] != M
+rule_128: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_2] = S
+rule_129: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_2] != I
+rule_130: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_1] != M
+rule_131: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_1] = S
+rule_132: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_1] != M
+rule_133: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_2] = S
+rule_134: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_2] != I
+rule_135: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_1] = S
+rule_136: state[NODE_2] != I & state[NODE_1] = S -> state[NODE_1] != I
+rule_137: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_2] = S
+rule_138: state[NODE_2] != I & state[NODE_2] = S -> state[NODE_1] != I
+rule_139: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_2] != I
+rule_140: state[NODE_2] = I & state[NODE_1] != E -> state[NODE_2] != E
+rule_141: state[NODE_2] = I & state[NODE_2] != E -> state[NODE_2] != M
+rule_142: state[NODE_2] = I & state[NODE_2] != M -> state[NODE_2] != E
+rule_143: state[NODE_2] = I & state[NODE_1] != M -> state[NODE_2] != E
+rule_144: state[NODE_2] = I & state[NODE_1] != I -> state[NODE_2] != E
+rule_145: state[NODE_2] = I & state[NODE_1] != S -> state[NODE_2] != E
+rule_146: state[NODE_2] != E & state[NODE_1] != S -> state[NODE_2] = I
+rule_147: state[NODE_2] = I & state[NODE_2] != E -> state[NODE_2] != S
+rule_148: state[NODE_2] = I & state[NODE_2] != S -> state[NODE_2] != E
+rule_149: state[NODE_2] != E & state[NODE_2] != S -> state[NODE_2] = I
+rule_150: state[NODE_2] = I & state[NODE_1] != E -> state[NODE_2] != M
+rule_151: state[NODE_1] != E & state[NODE_1] != S -> state[NODE_2] = I
+rule_152: state[NODE_2] = I & state[NODE_1] != E -> state[NODE_2] != S
+rule_153: state[NODE_1] != E & state[NODE_2] != S -> state[NODE_2] = I
+rule_154: state[NODE_2] = I & state[NODE_1] != M -> state[NODE_2] != M
+rule_155: state[NODE_2] = I & state[NODE_1] != I -> state[NODE_2] != M
+rule_156: state[NODE_2] = I & state[NODE_1] != S -> state[NODE_2] != M
+rule_157: state[NODE_2] != M & state[NODE_1] != S -> state[NODE_2] = I
+rule_158: state[NODE_2] = I & state[NODE_2] != S -> state[NODE_2] != M
+rule_159: state[NODE_2] = I & state[NODE_2] != M -> state[NODE_2] != S
+rule_160: state[NODE_2] != M & state[NODE_2] != S -> state[NODE_2] = I
+rule_161: state[NODE_1] != M & state[NODE_1] != S -> state[NODE_2] = I
+rule_162: state[NODE_2] = I & state[NODE_1] != M -> state[NODE_2] != S
+rule_163: state[NODE_1] != M & state[NODE_2] != S -> state[NODE_2] = I
+rule_164: state[NODE_1] != S & state[NODE_1] != I -> state[NODE_2] = I
+rule_165: state[NODE_2] = I & state[NODE_1] != I -> state[NODE_2] != S
+rule_166: state[NODE_2] != S & state[NODE_1] != I -> state[NODE_2] = I
+rule_167: state[NODE_2] = I & state[NODE_1] != S -> state[NODE_2] != S
+rule_168: state[NODE_2] != S & state[NODE_1] != S -> state[NODE_2] = I
+rule_169: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_1] != E
+rule_170: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_2] != E
+rule_171: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_1] != E
+rule_172: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_2] != E
+rule_173: state[NODE_1] = S & state[NODE_2] != E -> state[NODE_1] != E
+rule_174: state[NODE_1] != E & state[NODE_1] = S -> state[NODE_2] != E
+rule_175: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_1] != E
+rule_176: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_2] != E
+rule_177: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_2] != M
+rule_178: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_2] != E
+rule_179: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_1] != M
+rule_180: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_2] != E
+rule_181: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_2] != E
+rule_182: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_1] != I
+rule_183: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_1] != S
+rule_184: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_2] != E
+rule_185: state[NODE_2] != E & state[NODE_1] = E -> state[NODE_2] != S
+rule_186: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_2] != E
+rule_187: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_2] != M
+rule_188: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_2] != E
+rule_189: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_2] != M
+rule_190: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_2] != E
+rule_191: state[NODE_1] = S & state[NODE_2] != E -> state[NODE_2] != M
+rule_192: state[NODE_2] != M & state[NODE_1] = S -> state[NODE_2] != E
+rule_193: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_2] != M
+rule_194: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_2] != E
+rule_195: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_1] != M
+rule_196: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_2] != E
+rule_197: state[NODE_1] = S & state[NODE_2] != E -> state[NODE_1] != M
+rule_198: state[NODE_1] = S & state[NODE_1] != M -> state[NODE_2] != E
+rule_199: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_1] != M
+rule_200: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_2] != E
+rule_201: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_2] != E
+rule_202: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_1] != I
+rule_203: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_1] != S
+rule_204: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_2] != E
+rule_205: state[NODE_2] != E & state[NODE_1] = M -> state[NODE_2] != S
+rule_206: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_2] != E
+rule_207: state[NODE_1] = S & state[NODE_1] != I -> state[NODE_2] != E
+rule_208: state[NODE_1] = S & state[NODE_2] != E -> state[NODE_1] != I
+rule_209: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_2] != E
+rule_210: state[NODE_2] != E & state[NODE_2] = S -> state[NODE_1] != I
+rule_211: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_1] != S
+rule_212: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_2] != E
+rule_213: state[NODE_2] != E & state[NODE_1] = I -> state[NODE_2] != S
+rule_214: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_2] != E
+rule_215: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_2] != E
+rule_216: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_2] != M
+rule_217: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_1] != E
+rule_218: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_2] != M
+rule_219: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_1] != E
+rule_220: state[NODE_1] != E & state[NODE_1] = S -> state[NODE_2] != M
+rule_221: state[NODE_2] != M & state[NODE_1] = S -> state[NODE_1] != E
+rule_222: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_2] != M
+rule_223: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_1] != E
+rule_224: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_1] != M
+rule_225: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_1] != E
+rule_226: state[NODE_1] != E & state[NODE_1] = S -> state[NODE_1] != M
+rule_227: state[NODE_1] = S & state[NODE_1] != M -> state[NODE_1] != E
+rule_228: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_1] != M
+rule_229: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_1] != E
+rule_230: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_1] != E
+rule_231: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_1] != I
+rule_232: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_1] != E
+rule_233: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_1] != S
+rule_234: state[NODE_1] != E & state[NODE_1] = M -> state[NODE_2] != S
+rule_235: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_1] != E
+rule_236: state[NODE_1] = S & state[NODE_1] != I -> state[NODE_1] != E
+rule_237: state[NODE_1] != E & state[NODE_1] = S -> state[NODE_1] != I
+rule_238: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_1] != E
+rule_239: state[NODE_1] != E & state[NODE_2] = S -> state[NODE_1] != I
+rule_240: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_1] != E
+rule_241: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_1] != S
+rule_242: state[NODE_1] != E & state[NODE_1] = I -> state[NODE_2] != S
+rule_243: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_1] != E
+rule_244: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_1] != E
+rule_245: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_1] != M
+rule_246: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_2] != M
+rule_247: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_2] != M
+rule_248: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_1] != I
+rule_249: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_2] != M
+rule_250: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_1] != S
+rule_251: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_2] != M
+rule_252: state[NODE_2] != M & state[NODE_1] = E -> state[NODE_2] != S
+rule_253: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_1] != M
+rule_254: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_1] != I
+rule_255: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_1] != M
+rule_256: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_1] != S
+rule_257: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_1] != M
+rule_258: state[NODE_1] != M & state[NODE_1] = E -> state[NODE_2] != S
+rule_259: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_1] != S
+rule_260: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_1] != I
+rule_261: state[NODE_1] = E & state[NODE_1] != I -> state[NODE_2] != S
+rule_262: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_1] != I
+rule_263: state[NODE_1] = E & state[NODE_1] != S -> state[NODE_2] != S
+rule_264: state[NODE_2] != S & state[NODE_1] = E -> state[NODE_1] != S
+rule_265: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_1] != M
+rule_266: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_2] != M
+rule_267: state[NODE_2] != M & state[NODE_1] = S -> state[NODE_1] != M
+rule_268: state[NODE_1] = S & state[NODE_1] != M -> state[NODE_2] != M
+rule_269: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_1] != M
+rule_270: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_2] != M
+rule_271: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_2] != M
+rule_272: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_1] != I
+rule_273: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_2] != M
+rule_274: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_1] != S
+rule_275: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_2] != M
+rule_276: state[NODE_2] != M & state[NODE_1] = M -> state[NODE_2] != S
+rule_277: state[NODE_1] = S & state[NODE_1] != I -> state[NODE_2] != M
+rule_278: state[NODE_2] != M & state[NODE_1] = S -> state[NODE_1] != I
+rule_279: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_2] != M
+rule_280: state[NODE_2] != M & state[NODE_2] = S -> state[NODE_1] != I
+rule_281: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_2] != M
+rule_282: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_1] != S
+rule_283: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_2] != M
+rule_284: state[NODE_2] != M & state[NODE_1] = I -> state[NODE_2] != S
+rule_285: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_2] != M
+rule_286: state[NODE_1] = S & state[NODE_1] != I -> state[NODE_1] != M
+rule_287: state[NODE_1] = S & state[NODE_1] != M -> state[NODE_1] != I
+rule_288: state[NODE_2] = S & state[NODE_1] != I -> state[NODE_1] != M
+rule_289: state[NODE_2] = S & state[NODE_1] != M -> state[NODE_1] != I
+rule_290: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_1] != M
+rule_291: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_1] != S
+rule_292: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_1] != M
+rule_293: state[NODE_1] != M & state[NODE_1] = I -> state[NODE_2] != S
+rule_294: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_1] != M
+rule_295: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_1] != S
+rule_296: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_1] != I
+rule_297: state[NODE_1] = M & state[NODE_1] != I -> state[NODE_2] != S
+rule_298: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_1] != I
+rule_299: state[NODE_1] = M & state[NODE_1] != S -> state[NODE_2] != S
+rule_300: state[NODE_1] = M & state[NODE_2] != S -> state[NODE_1] != S
+rule_301: state[NODE_1] = S & state[NODE_2] != S -> state[NODE_1] != I
+rule_302: state[NODE_1] = I & state[NODE_1] != S -> state[NODE_2] != S
+rule_303: state[NODE_1] = I & state[NODE_2] != S -> state[NODE_1] != S
+rule_304: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_1] != E
+rule_305: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_2] != E
+rule_306: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_2] != M
+rule_307: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_2] != E
+rule_308: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_1] != M
+rule_309: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_2] != E
+rule_310: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_2] != E
+rule_311: state[NODE_2] != I & state[NODE_2] != E -> state[NODE_1] != I
+rule_312: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_2] != M
+rule_313: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_1] != E
+rule_314: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_1] != M
+rule_315: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_1] != E
+rule_316: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_1] != E
+rule_317: state[NODE_2] != I & state[NODE_1] != E -> state[NODE_1] != I
+rule_318: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_1] != M
+rule_319: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_2] != M
+rule_320: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_2] != M
+rule_321: state[NODE_2] != M & state[NODE_2] != I -> state[NODE_1] != I
+rule_322: state[NODE_2] != I & state[NODE_1] != I -> state[NODE_1] != M
+rule_323: state[NODE_2] != I & state[NODE_1] != M -> state[NODE_1] != I
+rule_324: state[NODE_1] != E & state[NODE_2] != E -> state[NODE_2] != M
+rule_325: state[NODE_2] != M & state[NODE_1] != E -> state[NODE_2] != E
+rule_326: state[NODE_1] != E & state[NODE_1] != M -> state[NODE_2] != E
+rule_327: state[NODE_1] != E & state[NODE_1] != I -> state[NODE_2] != E
+rule_328: state[NODE_1] != E & state[NODE_1] != S -> state[NODE_2] != E
+rule_329: state[NODE_1] != E & state[NODE_2] != S -> state[NODE_2] != E
+rule_330: state[NODE_2] != E & state[NODE_1] != M -> state[NODE_2] != M
+rule_331: state[NODE_2] != M & state[NODE_1] != M -> state[NODE_2] != E
+rule_332: state[NODE_2] != E & state[NODE_1] != I -> state[NODE_2] != M
+rule_333: state[NODE_2] != M & state[NODE_1] != I -> state[NODE_2] != E
+rule_334: state[NODE_2] != E & state[NODE_1] != S -> state[NODE_2] != M
+rule_335: state[NODE_2] != M & state[NODE_1] != S -> state[NODE_2] != E
+rule_336: state[NODE_2] != E & state[NODE_2] != S -> state[NODE_2] != M
+rule_337: state[NODE_2] != M & state[NODE_2] != S -> state[NODE_2] != E
+rule_338: state[NODE_1] != M & state[NODE_1] != I -> state[NODE_2] != E
+rule_339: state[NODE_1] != M & state[NODE_1] != S -> state[NODE_2] != E
+rule_340: state[NODE_1] != M & state[NODE_2] != S -> state[NODE_2] != E
+rule_341: state[NODE_1] != S & state[NODE_1] != I -> state[NODE_2] != E
+rule_342: state[NODE_2] != S & state[NODE_1] != I -> state[NODE_2] != E
+rule_343: state[NODE_2] != E & state[NODE_1] != S -> state[NODE_2] != S
+rule_344: state[NODE_2] != S & state[NODE_1] != S -> state[NODE_2] != E
+rule_345: state[NODE_1] != E & state[NODE_1] != M -> state[NODE_2] != M
+rule_346: state[NODE_1] != E & state[NODE_1] != I -> state[NODE_2] != M
+rule_347: state[NODE_1] != E & state[NODE_1] != S -> state[NODE_2] != M
+rule_348: state[NODE_1] != E & state[NODE_2] != S -> state[NODE_2] != M
+rule_349: state[NODE_1] != E & state[NODE_1] != S -> state[NODE_2] != S
+rule_350: state[NODE_1] != M & state[NODE_1] != I -> state[NODE_2] != M
+rule_351: state[NODE_1] != M & state[NODE_1] != S -> state[NODE_2] != M
+rule_352: state[NODE_1] != M & state[NODE_2] != S -> state[NODE_2] != M
+rule_353: state[NODE_1] != S & state[NODE_1] != I -> state[NODE_2] != M
+rule_354: state[NODE_2] != S & state[NODE_1] != I -> state[NODE_2] != M
+rule_355: state[NODE_2] != S & state[NODE_1] != S -> state[NODE_2] != M
+rule_356: state[NODE_2] != M & state[NODE_1] != S -> state[NODE_2] != S
+rule_357: state[NODE_1] != M & state[NODE_1] != S -> state[NODE_2] != S
+rule_358: state[NODE_1] != S & state[NODE_1] != I -> state[NODE_2] != S

@@ -1,0 +1,5 @@
+n[NODE] = C
+n[NODE] = I
+x = true
+n[NODE] = T
+n[NODE] = E

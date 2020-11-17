@@ -1,0 +1,40 @@
+rule_1: n[NODE_2] = I -> x = true
+rule_2: n[NODE_1] = I -> x = true
+rule_3: x = true -> n[NODE_1] != E
+rule_4: x = true -> n[NODE_1] != C
+rule_5: n[NODE_1] = C -> x = false
+rule_6: x = true -> n[NODE_2] != C
+rule_7: n[NODE_2] = C -> x = false
+rule_8: n[NODE_2] = E -> x = false
+rule_9: x = true -> n[NODE_2] != E
+rule_10: n[NODE_1] = E -> x = false
+rule_11: n[NODE_2] = I -> n[NODE_1] = I
+rule_12: n[NODE_1] = I -> n[NODE_2] = I
+rule_13: n[NODE_1] = T -> n[NODE_2] != I
+rule_14: n[NODE_1] = E -> n[NODE_2] != C
+rule_15: n[NODE_1] = E -> n[NODE_2] != E
+rule_16: n[NODE_2] = E -> n[NODE_1] != E
+rule_17: n[NODE_1] = I -> n[NODE_2] != E
+rule_18: n[NODE_1] = I -> n[NODE_2] != T
+rule_19: n[NODE_2] = T -> n[NODE_1] != C
+rule_20: n[NODE_2] = I -> n[NODE_1] != E
+rule_21: n[NODE_1] = C -> n[NODE_2] != E
+rule_22: n[NODE_1] = I -> n[NODE_2] != C
+rule_23: n[NODE_2] = C -> n[NODE_1] != C
+rule_24: n[NODE_2] = T -> n[NODE_1] != E
+rule_25: n[NODE_1] = T -> n[NODE_2] != E
+rule_26: n[NODE_2] = T -> n[NODE_1] != I
+rule_27: n[NODE_1] = T -> n[NODE_2] != C
+rule_28: n[NODE_2] = I -> n[NODE_1] != C
+rule_29: n[NODE_2] = C -> n[NODE_1] != E
+rule_30: n[NODE_2] = I -> n[NODE_1] != T
+rule_31: n[NODE_1] = C -> n[NODE_2] != C
+rule_32: n[NODE_2] = E -> n[NODE_1] != C
+rule_33: n[NODE_2] = T & x = true -> n[NODE_1] = T
+rule_34: n[NODE_1] = T & x = true -> n[NODE_2] = T
+rule_35: n[NODE_2] = T & x = true -> n[NODE_1] != C
+rule_36: n[NODE_1] = T & x = true -> n[NODE_2] != C
+rule_37: n[NODE_2] = T & x = true -> n[NODE_1] != I
+rule_38: n[NODE_1] = T & x = true -> n[NODE_2] != I
+rule_39: n[NODE_1] = T & x = true -> n[NODE_2] != E
+rule_40: n[NODE_2] = T & x = true -> n[NODE_1] != E

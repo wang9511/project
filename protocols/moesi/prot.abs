@@ -1,0 +1,152 @@
+
+
+n_rule_t1:
+[i], NoAbstractRule
+
+n_rule_t2:
+[i],n_ABS_rule_t2_NODE_1,
+[rule_35,rule_37,rule_15,rule_25,rule_30],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_35"
+		(i != j) ->	(a[i] = I -> a[i] != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_37"
+		(i != j) ->	(a[i] = I -> a[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_15"
+		(i != j) ->	(a[i] = I -> a[i] = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_25"
+		(i != j) ->	(a[i] = I -> a[i] != M);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_30"
+		(i != j) ->	(a[i] = I -> a[i] != OSTATUS);
+endruleset;
+
+
+n_rul_t3:
+[i],n_ABS_rul_t3_NODE_1,
+[rule_16,rule_26,rule_19,rule_5],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_16"
+		(i != j) ->	(a[i] = S -> a[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_26"
+		(i != j) ->	(a[i] = S -> a[i] != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_19"
+		(i != j) ->	(a[i] = S -> a[i] != OSTATUS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_5"
+		(i != j) ->	(a[i] = S -> a[i] != M);
+endruleset;
+
+
+n_rul_t4:
+[i],n_ABS_rul_t4_NODE_1,
+[rule_32,rule_38,rule_10,rule_23,rule_31],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_32"
+		(i != j) ->	(a[i] = OSTATUS -> a[i] = S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_38"
+		(i != j) ->	(a[i] = OSTATUS -> a[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_10"
+		(i != j) ->	(a[i] = OSTATUS -> a[i] != OSTATUS);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_23"
+		(i != j) ->	(a[i] = OSTATUS -> a[i] != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_31"
+		(i != j) ->	(a[i] = OSTATUS -> a[i] != M);
+endruleset;
+
+
+n_rul_t5:
+[i],n_ABS_rul_t5_NODE_1,
+[rule_35,rule_37,rule_15,rule_25,rule_30],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_35"
+		(i != j) ->	(a[i] = I -> a[i] != S);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_37"
+		(i != j) ->	(a[i] = I -> a[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_15"
+		(i != j) ->	(a[i] = I -> a[i] = I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_25"
+		(i != j) ->	(a[i] = I -> a[i] != M);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_30"
+		(i != j) ->	(a[i] = I -> a[i] != OSTATUS);
+endruleset;

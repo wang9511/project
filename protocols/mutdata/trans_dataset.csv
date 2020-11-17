@@ -1,0 +1,24 @@
+n[NODE_1].data = auxDATA,n[NODE_2].st = I,x = false,n[NODE_1].st = C,n[NODE_2].st = C,n[NODE_2].data = auxDATA,n[NODE_1].st = I,n[NODE_1].st = E,n[NODE_2].st = T,n[NODE_1].st = T,x = true,n[NODE_2].st = E
+True,True,False,False,False,True,True,False,False,False,True,False
+True,False,False,False,False,True,True,False,True,False,True,False
+True,False,True,False,True,True,True,False,False,False,False,False
+True,False,False,False,False,True,False,False,True,True,True,False
+False,False,True,False,True,True,True,False,False,False,False,False
+True,False,True,False,False,True,True,False,False,False,False,True
+True,False,True,False,True,True,False,False,False,True,False,False
+False,False,True,False,False,True,True,False,False,False,False,True
+False,False,True,False,True,True,False,False,False,True,False,False
+True,False,True,False,False,True,False,False,False,True,False,True
+False,True,False,False,False,True,True,False,False,False,True,False
+False,False,True,False,False,True,False,False,False,True,False,True
+True,False,False,False,False,False,True,False,True,False,True,False
+False,False,False,False,False,True,True,False,True,False,True,False
+False,False,False,False,False,True,False,False,True,True,True,False
+False,False,True,False,True,True,True,False,False,False,False,False
+False,False,True,False,True,True,False,False,False,True,False,False
+True,False,True,False,True,True,True,False,False,False,False,False
+False,False,True,False,False,True,True,False,False,False,False,True
+True,False,True,False,True,True,False,False,False,True,False,False
+False,False,True,False,False,True,False,False,False,True,False,True
+True,False,True,False,False,True,True,False,False,False,False,True
+True,False,True,False,False,True,False,False,False,True,False,True

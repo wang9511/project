@@ -1,0 +1,10 @@
+a[NODE_1] = E
+a[NODE_1] = M
+a[NODE_1] = I
+a[NODE_1] = OSTATUS
+a[NODE_1] = S
+a[NODE_2] = E
+a[NODE_2] = M
+a[NODE_2] = I
+a[NODE_2] = OSTATUS
+a[NODE_2] = S

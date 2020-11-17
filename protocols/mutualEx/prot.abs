@@ -1,0 +1,98 @@
+
+
+n_Try:
+[i], NoAbstractRule
+
+n_Crit:
+[i],n_ABS_Crit_NODE_1,
+[rule_35,rule_5,rule_6,rule_37,rule_9,rule_19,rule_24,rule_27,rule_31],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_35"
+		(i != j) ->	(n[i] = T & x = true -> n[i] != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_5"
+		(i != j) ->	(n[i] = T & x = true -> n[i] = T);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_6"
+		(i != j) ->	(n[i] = T -> n[i] != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_37"
+		(i != j) ->	(n[i] = T -> n[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_9"
+		(i != j) ->	(n[i] = T & x = true -> n[i] != I);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_19"
+		(i != j) ->	(n[i] = T -> n[i] != I);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_24"
+	(x = true -> n[j] != C);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_27"
+		(i != j) ->	(n[i] = T & x = true -> n[i] != E);
+endruleset;
+
+
+
+ruleset j : NODE do
+Invariant "rule_31"
+	(x = true -> n[j] != E);
+endruleset;
+
+
+n_Exit:
+[i], NoAbstractRule
+
+n_Idle:
+[i],n_ABS_Idle_NODE_1,
+[rule_11,rule_21,rule_38],[]
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_11"
+		(i != j) ->	(n[i] = E -> n[i] != E);
+endruleset;
+
+
+
+ruleset i : NODE do
+Invariant "rule_21"
+	(n[i] = E -> x = false);
+endruleset;
+
+
+
+ruleset i : NODE ; j : NODE do
+Invariant "rule_38"
+		(i != j) ->	(n[i] = E -> n[i] != C);
+endruleset;

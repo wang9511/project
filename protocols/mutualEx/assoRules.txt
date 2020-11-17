@@ -1,0 +1,703 @@
+rule_1: x = true -> x = true
+rule_2: x = true -> x = true
+rule_3: x = false -> x = false
+rule_4: x = false -> x = false
+rule_5: n[NODE_2] = T -> x = true
+rule_6: n[NODE_2] = T -> x = true
+rule_7: n[NODE_2] = I -> x = true
+rule_8: n[NODE_2] = I -> x = true
+rule_9: x = true -> n[NODE_1] != E
+rule_10: x = true -> n[NODE_1] != E
+rule_11: n[NODE_2] = C -> x = false
+rule_12: n[NODE_2] = C -> x = false
+rule_13: x = true -> n[NODE_2] != C
+rule_14: x = true -> n[NODE_2] != C
+rule_15: x = true -> n[NODE_1] != C
+rule_16: x = true -> n[NODE_1] != C
+rule_17: x = true -> n[NODE_2] != E
+rule_18: n[NODE_2] = E -> x = false
+rule_19: n[NODE_2] = E -> x = false
+rule_20: x = true -> n[NODE_2] != E
+rule_21: x = true -> n[NODE_1] != E
+rule_22: x = true -> n[NODE_2] != C
+rule_23: x = true -> n[NODE_1] != C
+rule_24: x = true -> n[NODE_2] != E
+rule_25: x = false -> n[NODE_1] != E
+rule_26: x = false -> n[NODE_1] != E
+rule_27: x = false -> n[NODE_2] != T
+rule_28: x = false -> n[NODE_2] != T
+rule_29: x = false -> n[NODE_1] != C
+rule_30: x = false -> n[NODE_1] != C
+rule_31: x = false -> n[NODE_2] != I
+rule_32: x = false -> n[NODE_2] != I
+rule_33: x = false -> n[NODE_1] != E
+rule_34: x = false -> n[NODE_2] != T
+rule_35: x = false -> n[NODE_1] != C
+rule_36: x = false -> n[NODE_2] != I
+rule_37: n[NODE_2] = I -> n[NODE_1] = I
+rule_38: n[NODE_1] = I -> n[NODE_1] != E
+rule_39: n[NODE_1] = I -> n[NODE_1] != C
+rule_40: n[NODE_1] = I -> n[NODE_1] != T
+rule_41: n[NODE_1] != T -> n[NODE_1] = I
+rule_42: n[NODE_1] != I -> n[NODE_1] = T
+rule_43: n[NODE_1] = T -> n[NODE_1] != I
+rule_44: n[NODE_2] = C -> n[NODE_1] != E
+rule_45: n[NODE_2] = T -> n[NODE_1] != E
+rule_46: n[NODE_2] = E -> n[NODE_1] != E
+rule_47: n[NODE_1] = T -> n[NODE_1] != E
+rule_48: n[NODE_2] = I -> n[NODE_1] != E
+rule_49: n[NODE_2] = C -> n[NODE_2] != T
+rule_50: n[NODE_2] = C -> n[NODE_1] != C
+rule_51: n[NODE_2] = C -> n[NODE_2] != E
+rule_52: n[NODE_2] = C -> n[NODE_2] != I
+rule_53: n[NODE_2] = T -> n[NODE_2] != C
+rule_54: n[NODE_2] = E -> n[NODE_2] != C
+rule_55: n[NODE_2] = I -> n[NODE_2] != C
+rule_56: n[NODE_2] = T -> n[NODE_1] != C
+rule_57: n[NODE_2] = T -> n[NODE_2] != E
+rule_58: n[NODE_2] = T -> n[NODE_2] != I
+rule_59: n[NODE_2] = E -> n[NODE_2] != T
+rule_60: n[NODE_2] = I -> n[NODE_2] != T
+rule_61: n[NODE_2] = E -> n[NODE_1] != C
+rule_62: n[NODE_1] = T -> n[NODE_1] != C
+rule_63: n[NODE_2] = I -> n[NODE_1] != C
+rule_64: n[NODE_2] = E -> n[NODE_2] != I
+rule_65: n[NODE_2] = I -> n[NODE_2] != E
+rule_66: n[NODE_1] = T -> n[NODE_2] != I
+rule_67: n[NODE_2] = I -> n[NODE_1] != T
+rule_68: n[NODE_1] != I -> n[NODE_1] != E
+rule_69: n[NODE_1] != I -> n[NODE_1] != C
+rule_70: n[NODE_1] != I -> n[NODE_2] != I
+rule_71: n[NODE_2] != C -> n[NODE_1] != E
+rule_72: n[NODE_2] != T -> n[NODE_1] != E
+rule_73: n[NODE_1] != E -> n[NODE_1] != C
+rule_74: n[NODE_1] != C -> n[NODE_1] != E
+rule_75: n[NODE_2] != E -> n[NODE_1] != E
+rule_76: n[NODE_1] != T -> n[NODE_1] != E
+rule_77: n[NODE_2] != I -> n[NODE_1] != E
+rule_78: n[NODE_2] != C -> n[NODE_1] != C
+rule_79: n[NODE_2] != T -> n[NODE_1] != C
+rule_80: n[NODE_2] != E -> n[NODE_1] != C
+rule_81: n[NODE_1] != T -> n[NODE_1] != C
+rule_82: n[NODE_2] != I -> n[NODE_1] != C
+rule_83: n[NODE_1] = I & x = true -> x = true
+rule_84: n[NODE_1] = I & x = true -> x = true
+rule_85: n[NODE_2] = T & x = true -> x = true
+rule_86: n[NODE_2] = T & x = true -> x = true
+rule_87: n[NODE_1] = T & x = true -> x = true
+rule_88: n[NODE_1] = T & x = true -> x = true
+rule_89: x = true & n[NODE_2] = I -> x = true
+rule_90: x = true & n[NODE_2] = I -> x = true
+rule_91: n[NODE_1] != I & x = true -> x = true
+rule_92: n[NODE_1] != I & x = true -> x = true
+rule_93: n[NODE_1] != E & x = true -> x = true
+rule_94: n[NODE_1] != E & x = true -> x = true
+rule_95: x = true & n[NODE_2] != C -> x = true
+rule_96: x = true & n[NODE_2] != C -> x = true
+rule_97: n[NODE_2] != T & x = true -> x = true
+rule_98: n[NODE_2] != T & x = true -> x = true
+rule_99: n[NODE_1] != C & x = true -> x = true
+rule_100: n[NODE_1] != C & x = true -> x = true
+rule_101: x = true & n[NODE_2] != E -> x = true
+rule_102: x = true & n[NODE_2] != E -> x = true
+rule_103: x = true & n[NODE_1] != T -> x = true
+rule_104: x = true & n[NODE_1] != T -> x = true
+rule_105: x = true & n[NODE_2] != I -> x = true
+rule_106: x = true & n[NODE_2] != I -> x = true
+rule_107: n[NODE_1] = I & x = false -> x = false
+rule_108: n[NODE_1] = I & x = false -> x = false
+rule_109: x = false & n[NODE_2] = C -> x = false
+rule_110: x = false & n[NODE_2] = C -> x = false
+rule_111: n[NODE_2] = E & x = false -> x = false
+rule_112: n[NODE_2] = E & x = false -> x = false
+rule_113: n[NODE_1] = T & x = false -> x = false
+rule_114: n[NODE_1] = T & x = false -> x = false
+rule_115: n[NODE_1] != I & x = false -> x = false
+rule_116: n[NODE_1] != I & x = false -> x = false
+rule_117: x = false & n[NODE_1] != E -> x = false
+rule_118: n[NODE_1] != E & x = false -> x = false
+rule_119: x = false & n[NODE_2] != C -> x = false
+rule_120: x = false & n[NODE_2] != C -> x = false
+rule_121: x = false & n[NODE_2] != T -> x = false
+rule_122: x = false & n[NODE_2] != T -> x = false
+rule_123: n[NODE_1] != C & x = false -> x = false
+rule_124: n[NODE_1] != C & x = false -> x = false
+rule_125: x = false & n[NODE_2] != E -> x = false
+rule_126: x = false & n[NODE_2] != E -> x = false
+rule_127: x = false & n[NODE_1] != T -> x = false
+rule_128: x = false & n[NODE_1] != T -> x = false
+rule_129: x = false & n[NODE_2] != I -> x = false
+rule_130: x = false & n[NODE_2] != I -> x = false
+rule_131: n[NODE_1] = I & n[NODE_2] = T -> x = true
+rule_132: n[NODE_1] = I & n[NODE_2] = T -> x = true
+rule_133: n[NODE_1] = I & n[NODE_2] = I -> x = true
+rule_134: x = true & n[NODE_2] = I -> n[NODE_1] = I
+rule_135: n[NODE_1] = I & n[NODE_2] = I -> x = true
+rule_136: x = true & n[NODE_2] = I -> n[NODE_1] = I
+rule_137: n[NODE_1] = T & x = true -> n[NODE_2] = T
+rule_138: n[NODE_1] = T & n[NODE_2] = T -> x = true
+rule_139: n[NODE_1] = T & x = true -> n[NODE_2] = T
+rule_140: n[NODE_1] = T & n[NODE_2] = T -> x = true
+rule_141: n[NODE_1] = I & x = true -> n[NODE_1] != E
+rule_142: n[NODE_1] = I & x = true -> n[NODE_1] != E
+rule_143: n[NODE_1] = I & n[NODE_2] = C -> x = false
+rule_144: n[NODE_1] = I & n[NODE_2] = C -> x = false
+rule_145: n[NODE_1] = I & x = true -> n[NODE_2] != C
+rule_146: n[NODE_1] = I & x = true -> n[NODE_2] != C
+rule_147: n[NODE_2] != T & x = true -> n[NODE_1] = I
+rule_148: n[NODE_2] != T & x = true -> n[NODE_1] = I
+rule_149: n[NODE_1] = I & x = true -> n[NODE_1] != C
+rule_150: n[NODE_1] = I & x = true -> n[NODE_1] != C
+rule_151: n[NODE_1] = I & x = true -> n[NODE_2] != E
+rule_152: n[NODE_1] = I & x = true -> n[NODE_1] != T
+rule_153: x = true & n[NODE_1] != T -> n[NODE_1] = I
+rule_154: n[NODE_1] = I & n[NODE_2] = E -> x = false
+rule_155: n[NODE_1] = I & n[NODE_2] = E -> x = false
+rule_156: n[NODE_1] = I & x = true -> n[NODE_2] != E
+rule_157: n[NODE_1] = I & x = true -> n[NODE_1] != T
+rule_158: x = true & n[NODE_1] != T -> n[NODE_1] = I
+rule_159: n[NODE_1] != I & x = true -> n[NODE_2] = T
+rule_160: n[NODE_1] != I & n[NODE_2] = T -> x = true
+rule_161: n[NODE_1] != I & x = true -> n[NODE_2] = T
+rule_162: n[NODE_1] != I & n[NODE_2] = T -> x = true
+rule_163: n[NODE_1] != I & x = true -> n[NODE_1] = T
+rule_164: n[NODE_1] = T & x = true -> n[NODE_1] != I
+rule_165: n[NODE_1] != I & x = true -> n[NODE_1] = T
+rule_166: n[NODE_1] = T & x = true -> n[NODE_1] != I
+rule_167: n[NODE_2] = T & x = true -> n[NODE_1] != E
+rule_168: n[NODE_1] != E & n[NODE_2] = T -> x = true
+rule_169: n[NODE_1] != E & n[NODE_2] = T -> x = true
+rule_170: n[NODE_2] = T & x = true -> n[NODE_1] != E
+rule_171: n[NODE_1] = T & x = true -> n[NODE_1] != E
+rule_172: x = true & n[NODE_2] = I -> n[NODE_1] != E
+rule_173: n[NODE_1] != E & n[NODE_2] = I -> x = true
+rule_174: n[NODE_1] = T & x = true -> n[NODE_1] != E
+rule_175: n[NODE_1] != E & n[NODE_2] = I -> x = true
+rule_176: x = true & n[NODE_2] = I -> n[NODE_1] != E
+rule_177: n[NODE_1] = T & n[NODE_2] = C -> x = false
+rule_178: n[NODE_1] = T & n[NODE_2] = C -> x = false
+rule_179: n[NODE_2] = T & x = true -> n[NODE_2] != C
+rule_180: n[NODE_2] = T & n[NODE_2] != C -> x = true
+rule_181: n[NODE_2] = T & x = true -> n[NODE_2] != C
+rule_182: n[NODE_2] = T & n[NODE_2] != C -> x = true
+rule_183: n[NODE_1] = T & x = true -> n[NODE_2] != C
+rule_184: x = true & n[NODE_2] = I -> n[NODE_2] != C
+rule_185: n[NODE_2] = I & n[NODE_2] != C -> x = true
+rule_186: n[NODE_1] = T & x = true -> n[NODE_2] != C
+rule_187: x = true & n[NODE_2] = I -> n[NODE_2] != C
+rule_188: n[NODE_2] = I & n[NODE_2] != C -> x = true
+rule_189: n[NODE_2] = T & x = true -> n[NODE_1] != C
+rule_190: n[NODE_1] != C & n[NODE_2] = T -> x = true
+rule_191: n[NODE_2] = T & x = true -> n[NODE_1] != C
+rule_192: n[NODE_1] != C & n[NODE_2] = T -> x = true
+rule_193: n[NODE_2] = T & x = true -> n[NODE_2] != E
+rule_194: n[NODE_2] = T & n[NODE_2] != E -> x = true
+rule_195: n[NODE_2] = T & n[NODE_1] != T -> x = true
+rule_196: x = true & n[NODE_2] != I -> n[NODE_2] = T
+rule_197: n[NODE_2] = T & x = true -> n[NODE_2] != I
+rule_198: n[NODE_2] = T & n[NODE_2] != I -> x = true
+rule_199: n[NODE_2] = T & n[NODE_2] != E -> x = true
+rule_200: n[NODE_2] = T & x = true -> n[NODE_2] != E
+rule_201: n[NODE_2] = T & n[NODE_1] != T -> x = true
+rule_202: x = true & n[NODE_2] != I -> n[NODE_2] = T
+rule_203: n[NODE_2] = T & n[NODE_2] != I -> x = true
+rule_204: n[NODE_2] = T & x = true -> n[NODE_2] != I
+rule_205: x = true & n[NODE_2] = I -> n[NODE_2] != T
+rule_206: n[NODE_2] != T & x = true -> n[NODE_2] = I
+rule_207: n[NODE_2] != T & n[NODE_2] = I -> x = true
+rule_208: x = true & n[NODE_2] = I -> n[NODE_2] != T
+rule_209: n[NODE_2] != T & n[NODE_2] = I -> x = true
+rule_210: n[NODE_2] != T & x = true -> n[NODE_2] = I
+rule_211: n[NODE_1] = T & x = true -> n[NODE_1] != C
+rule_212: x = true & n[NODE_2] = I -> n[NODE_1] != C
+rule_213: n[NODE_1] != C & n[NODE_2] = I -> x = true
+rule_214: n[NODE_1] = T & x = true -> n[NODE_1] != C
+rule_215: x = true & n[NODE_2] = I -> n[NODE_1] != C
+rule_216: n[NODE_1] != C & n[NODE_2] = I -> x = true
+rule_217: n[NODE_1] = T & x = true -> n[NODE_2] != E
+rule_218: x = true & n[NODE_2] = I -> n[NODE_2] != E
+rule_219: n[NODE_2] = I & n[NODE_2] != E -> x = true
+rule_220: n[NODE_1] = T & x = true -> n[NODE_2] != I
+rule_221: x = true & n[NODE_2] = I -> n[NODE_1] != T
+rule_222: n[NODE_2] = I & n[NODE_1] != T -> x = true
+rule_223: n[NODE_2] = E & n[NODE_1] = T -> x = false
+rule_224: n[NODE_2] = E & n[NODE_1] = T -> x = false
+rule_225: n[NODE_1] = T & x = true -> n[NODE_2] != E
+rule_226: x = true & n[NODE_2] = I -> n[NODE_2] != E
+rule_227: n[NODE_2] = I & n[NODE_2] != E -> x = true
+rule_228: n[NODE_1] = T & x = true -> n[NODE_2] != I
+rule_229: x = true & n[NODE_2] = I -> n[NODE_1] != T
+rule_230: n[NODE_2] = I & n[NODE_1] != T -> x = true
+rule_231: n[NODE_1] = I & x = false -> n[NODE_1] != E
+rule_232: n[NODE_1] = I & x = false -> n[NODE_1] != E
+rule_233: n[NODE_1] = I & x = false -> n[NODE_2] != T
+rule_234: n[NODE_1] = I & x = false -> n[NODE_2] != T
+rule_235: n[NODE_1] = I & x = false -> n[NODE_1] != C
+rule_236: n[NODE_1] = I & x = false -> n[NODE_1] != C
+rule_237: n[NODE_1] = I & x = false -> n[NODE_1] != T
+rule_238: x = false & n[NODE_1] != T -> n[NODE_1] = I
+rule_239: n[NODE_1] = I & x = false -> n[NODE_2] != I
+rule_240: n[NODE_1] = I & x = false -> n[NODE_1] != T
+rule_241: x = false & n[NODE_1] != T -> n[NODE_1] = I
+rule_242: n[NODE_1] = I & x = false -> n[NODE_2] != I
+rule_243: n[NODE_1] != I & x = true -> n[NODE_1] != E
+rule_244: n[NODE_1] != I & x = true -> n[NODE_1] != E
+rule_245: n[NODE_1] != I & n[NODE_2] = C -> x = false
+rule_246: n[NODE_1] != I & n[NODE_2] = C -> x = false
+rule_247: n[NODE_1] != I & x = true -> n[NODE_2] != C
+rule_248: n[NODE_1] != I & x = true -> n[NODE_2] != C
+rule_249: n[NODE_1] != I & x = true -> n[NODE_1] != C
+rule_250: n[NODE_1] != I & x = true -> n[NODE_1] != C
+rule_251: n[NODE_1] != I & x = true -> n[NODE_2] != E
+rule_252: n[NODE_1] != I & x = true -> n[NODE_2] != I
+rule_253: n[NODE_1] != I & n[NODE_2] = E -> x = false
+rule_254: n[NODE_1] != I & x = false -> n[NODE_1] = T
+rule_255: n[NODE_1] = T & x = false -> n[NODE_1] != I
+rule_256: n[NODE_1] != I & n[NODE_2] = E -> x = false
+rule_257: n[NODE_1] != I & x = false -> n[NODE_1] = T
+rule_258: n[NODE_1] = T & x = false -> n[NODE_1] != I
+rule_259: n[NODE_1] != I & x = true -> n[NODE_2] != E
+rule_260: n[NODE_1] != I & x = true -> n[NODE_2] != I
+rule_261: x = false & n[NODE_2] = C -> n[NODE_1] != E
+rule_262: n[NODE_1] != E & n[NODE_2] = C -> x = false
+rule_263: x = false & n[NODE_2] = C -> n[NODE_1] != E
+rule_264: n[NODE_1] != E & n[NODE_2] = C -> x = false
+rule_265: n[NODE_1] != E & x = true -> n[NODE_2] != C
+rule_266: x = true & n[NODE_2] != C -> n[NODE_1] != E
+rule_267: n[NODE_1] != E & x = true -> n[NODE_2] != C
+rule_268: x = true & n[NODE_2] != C -> n[NODE_1] != E
+rule_269: n[NODE_2] != T & x = true -> n[NODE_1] != E
+rule_270: n[NODE_2] != T & x = true -> n[NODE_1] != E
+rule_271: n[NODE_1] != E & x = true -> n[NODE_1] != C
+rule_272: n[NODE_1] != C & x = true -> n[NODE_1] != E
+rule_273: n[NODE_1] != E & x = true -> n[NODE_1] != C
+rule_274: n[NODE_1] != C & x = true -> n[NODE_1] != E
+rule_275: n[NODE_1] != E & x = true -> n[NODE_2] != E
+rule_276: x = true & n[NODE_2] != E -> n[NODE_1] != E
+rule_277: x = true & n[NODE_1] != T -> n[NODE_1] != E
+rule_278: x = true & n[NODE_2] != I -> n[NODE_1] != E
+rule_279: n[NODE_2] = E & x = false -> n[NODE_1] != E
+rule_280: n[NODE_2] = E & n[NODE_1] != E -> x = false
+rule_281: n[NODE_1] = T & x = false -> n[NODE_1] != E
+rule_282: n[NODE_2] = E & n[NODE_1] != E -> x = false
+rule_283: n[NODE_2] = E & x = false -> n[NODE_1] != E
+rule_284: n[NODE_1] = T & x = false -> n[NODE_1] != E
+rule_285: n[NODE_1] != E & x = true -> n[NODE_2] != E
+rule_286: x = true & n[NODE_2] != E -> n[NODE_1] != E
+rule_287: x = true & n[NODE_1] != T -> n[NODE_1] != E
+rule_288: x = true & n[NODE_2] != I -> n[NODE_1] != E
+rule_289: x = false & n[NODE_2] = C -> n[NODE_2] != T
+rule_290: n[NODE_2] != T & n[NODE_2] = C -> x = false
+rule_291: x = false & n[NODE_2] = C -> n[NODE_2] != T
+rule_292: n[NODE_2] != T & n[NODE_2] = C -> x = false
+rule_293: x = false & n[NODE_2] = C -> n[NODE_1] != C
+rule_294: n[NODE_1] != C & n[NODE_2] = C -> x = false
+rule_295: x = false & n[NODE_2] = C -> n[NODE_1] != C
+rule_296: n[NODE_1] != C & n[NODE_2] = C -> x = false
+rule_297: x = false & n[NODE_2] = C -> n[NODE_2] != E
+rule_298: x = false & n[NODE_2] != E -> n[NODE_2] = C
+rule_299: n[NODE_2] = C & n[NODE_2] != E -> x = false
+rule_300: n[NODE_2] = C & n[NODE_1] != T -> x = false
+rule_301: x = false & n[NODE_2] = C -> n[NODE_2] != I
+rule_302: n[NODE_2] = C & n[NODE_2] != I -> x = false
+rule_303: x = false & n[NODE_2] = C -> n[NODE_2] != E
+rule_304: x = false & n[NODE_2] != E -> n[NODE_2] = C
+rule_305: n[NODE_2] = C & n[NODE_2] != E -> x = false
+rule_306: n[NODE_2] = C & n[NODE_1] != T -> x = false
+rule_307: n[NODE_2] = C & n[NODE_2] != I -> x = false
+rule_308: x = false & n[NODE_2] = C -> n[NODE_2] != I
+rule_309: n[NODE_2] != T & x = true -> n[NODE_2] != C
+rule_310: n[NODE_2] != T & x = true -> n[NODE_2] != C
+rule_311: x = true & n[NODE_2] != C -> n[NODE_1] != C
+rule_312: n[NODE_1] != C & x = true -> n[NODE_2] != C
+rule_313: x = true & n[NODE_2] != C -> n[NODE_1] != C
+rule_314: n[NODE_1] != C & x = true -> n[NODE_2] != C
+rule_315: x = true & n[NODE_2] != C -> n[NODE_2] != E
+rule_316: x = true & n[NODE_2] != E -> n[NODE_2] != C
+rule_317: n[NODE_2] != C & n[NODE_2] != E -> x = true
+rule_318: x = true & n[NODE_1] != T -> n[NODE_2] != C
+rule_319: x = true & n[NODE_2] != I -> n[NODE_2] != C
+rule_320: x = false & n[NODE_2] != C -> n[NODE_2] = E
+rule_321: n[NODE_2] = E & x = false -> n[NODE_2] != C
+rule_322: n[NODE_2] = E & n[NODE_2] != C -> x = false
+rule_323: x = false & n[NODE_2] != C -> n[NODE_2] = E
+rule_324: n[NODE_2] = E & x = false -> n[NODE_2] != C
+rule_325: n[NODE_2] = E & n[NODE_2] != C -> x = false
+rule_326: x = true & n[NODE_2] != C -> n[NODE_2] != E
+rule_327: x = true & n[NODE_2] != E -> n[NODE_2] != C
+rule_328: n[NODE_2] != C & n[NODE_2] != E -> x = true
+rule_329: x = true & n[NODE_1] != T -> n[NODE_2] != C
+rule_330: x = true & n[NODE_2] != I -> n[NODE_2] != C
+rule_331: n[NODE_2] != T & x = true -> n[NODE_1] != C
+rule_332: n[NODE_2] != T & x = true -> n[NODE_1] != C
+rule_333: n[NODE_2] != T & x = true -> n[NODE_2] != E
+rule_334: n[NODE_2] != T & x = true -> n[NODE_1] != T
+rule_335: n[NODE_2] = E & x = false -> n[NODE_2] != T
+rule_336: n[NODE_2] = E & n[NODE_2] != T -> x = false
+rule_337: n[NODE_1] = T & x = false -> n[NODE_2] != T
+rule_338: n[NODE_1] = T & n[NODE_2] != T -> x = false
+rule_339: n[NODE_2] = E & x = false -> n[NODE_2] != T
+rule_340: n[NODE_2] = E & n[NODE_2] != T -> x = false
+rule_341: n[NODE_1] = T & x = false -> n[NODE_2] != T
+rule_342: n[NODE_1] = T & n[NODE_2] != T -> x = false
+rule_343: n[NODE_2] != T & x = true -> n[NODE_2] != E
+rule_344: n[NODE_2] != T & x = true -> n[NODE_1] != T
+rule_345: x = true & n[NODE_2] != E -> n[NODE_1] != C
+rule_346: n[NODE_1] != C & x = true -> n[NODE_2] != E
+rule_347: x = true & n[NODE_1] != T -> n[NODE_1] != C
+rule_348: x = true & n[NODE_2] != I -> n[NODE_1] != C
+rule_349: n[NODE_2] = E & x = false -> n[NODE_1] != C
+rule_350: n[NODE_1] != C & n[NODE_2] = E -> x = false
+rule_351: n[NODE_1] = T & x = false -> n[NODE_1] != C
+rule_352: n[NODE_2] = E & x = false -> n[NODE_1] != C
+rule_353: n[NODE_1] != C & n[NODE_2] = E -> x = false
+rule_354: n[NODE_1] = T & x = false -> n[NODE_1] != C
+rule_355: x = true & n[NODE_2] != E -> n[NODE_1] != C
+rule_356: n[NODE_1] != C & x = true -> n[NODE_2] != E
+rule_357: x = true & n[NODE_1] != T -> n[NODE_1] != C
+rule_358: x = true & n[NODE_2] != I -> n[NODE_1] != C
+rule_359: x = true & n[NODE_1] != T -> n[NODE_2] != E
+rule_360: x = true & n[NODE_2] != I -> n[NODE_2] != E
+rule_361: n[NODE_2] = E & n[NODE_1] != T -> x = false
+rule_362: n[NODE_2] = E & x = false -> n[NODE_2] != I
+rule_363: n[NODE_2] = E & n[NODE_2] != I -> x = false
+rule_364: n[NODE_1] = T & x = false -> n[NODE_2] != I
+rule_365: n[NODE_2] = E & n[NODE_1] != T -> x = false
+rule_366: n[NODE_2] = E & n[NODE_2] != I -> x = false
+rule_367: n[NODE_2] = E & x = false -> n[NODE_2] != I
+rule_368: n[NODE_1] = T & x = false -> n[NODE_2] != I
+rule_369: x = true & n[NODE_1] != T -> n[NODE_2] != E
+rule_370: x = true & n[NODE_2] != I -> n[NODE_2] != E
+rule_371: n[NODE_1] != I & x = false -> n[NODE_1] != E
+rule_372: n[NODE_1] != I & x = false -> n[NODE_1] != E
+rule_373: n[NODE_1] != I & n[NODE_2] != T -> x = false
+rule_374: n[NODE_1] != I & x = false -> n[NODE_2] != T
+rule_375: n[NODE_1] != I & x = false -> n[NODE_2] != T
+rule_376: n[NODE_1] != I & n[NODE_2] != T -> x = false
+rule_377: n[NODE_1] != I & x = false -> n[NODE_1] != C
+rule_378: n[NODE_1] != I & x = false -> n[NODE_1] != C
+rule_379: n[NODE_1] != I & x = false -> n[NODE_2] != I
+rule_380: n[NODE_1] != I & x = false -> n[NODE_2] != I
+rule_381: x = false & n[NODE_2] != C -> n[NODE_1] != E
+rule_382: x = false & n[NODE_2] != C -> n[NODE_1] != E
+rule_383: x = false & n[NODE_1] != E -> n[NODE_2] != T
+rule_384: x = false & n[NODE_2] != T -> n[NODE_1] != E
+rule_385: n[NODE_1] != E & x = false -> n[NODE_2] != T
+rule_386: x = false & n[NODE_2] != T -> n[NODE_1] != E
+rule_387: x = false & n[NODE_1] != E -> n[NODE_1] != C
+rule_388: n[NODE_1] != C & x = false -> n[NODE_1] != E
+rule_389: n[NODE_1] != E & x = false -> n[NODE_1] != C
+rule_390: n[NODE_1] != C & x = false -> n[NODE_1] != E
+rule_391: x = false & n[NODE_2] != E -> n[NODE_1] != E
+rule_392: x = false & n[NODE_1] != T -> n[NODE_1] != E
+rule_393: x = false & n[NODE_1] != E -> n[NODE_2] != I
+rule_394: x = false & n[NODE_2] != I -> n[NODE_1] != E
+rule_395: x = false & n[NODE_2] != E -> n[NODE_1] != E
+rule_396: x = false & n[NODE_1] != T -> n[NODE_1] != E
+rule_397: x = false & n[NODE_2] != I -> n[NODE_1] != E
+rule_398: n[NODE_1] != E & x = false -> n[NODE_2] != I
+rule_399: x = false & n[NODE_2] != C -> n[NODE_2] != T
+rule_400: x = false & n[NODE_2] != C -> n[NODE_2] != T
+rule_401: x = false & n[NODE_2] != C -> n[NODE_1] != C
+rule_402: x = false & n[NODE_2] != C -> n[NODE_1] != C
+rule_403: x = false & n[NODE_2] != C -> n[NODE_2] != I
+rule_404: x = false & n[NODE_2] != C -> n[NODE_2] != I
+rule_405: x = false & n[NODE_2] != T -> n[NODE_1] != C
+rule_406: n[NODE_1] != C & x = false -> n[NODE_2] != T
+rule_407: x = false & n[NODE_2] != T -> n[NODE_1] != C
+rule_408: n[NODE_1] != C & x = false -> n[NODE_2] != T
+rule_409: x = false & n[NODE_2] != E -> n[NODE_2] != T
+rule_410: x = false & n[NODE_1] != T -> n[NODE_2] != T
+rule_411: x = false & n[NODE_2] != T -> n[NODE_2] != I
+rule_412: x = false & n[NODE_2] != I -> n[NODE_2] != T
+rule_413: n[NODE_2] != T & n[NODE_2] != I -> x = false
+rule_414: x = false & n[NODE_2] != E -> n[NODE_2] != T
+rule_415: x = false & n[NODE_1] != T -> n[NODE_2] != T
+rule_416: x = false & n[NODE_2] != I -> n[NODE_2] != T
+rule_417: n[NODE_2] != T & n[NODE_2] != I -> x = false
+rule_418: x = false & n[NODE_2] != T -> n[NODE_2] != I
+rule_419: x = false & n[NODE_2] != E -> n[NODE_1] != C
+rule_420: x = false & n[NODE_1] != T -> n[NODE_1] != C
+rule_421: x = false & n[NODE_2] != I -> n[NODE_1] != C
+rule_422: n[NODE_1] != C & x = false -> n[NODE_2] != I
+rule_423: x = false & n[NODE_2] != E -> n[NODE_1] != C
+rule_424: x = false & n[NODE_1] != T -> n[NODE_1] != C
+rule_425: x = false & n[NODE_2] != I -> n[NODE_1] != C
+rule_426: n[NODE_1] != C & x = false -> n[NODE_2] != I
+rule_427: x = false & n[NODE_2] != E -> n[NODE_2] != I
+rule_428: x = false & n[NODE_1] != T -> n[NODE_2] != I
+rule_429: x = false & n[NODE_2] != E -> n[NODE_2] != I
+rule_430: x = false & n[NODE_1] != T -> n[NODE_2] != I
+rule_431: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_1] != E
+rule_432: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_1] != E
+rule_433: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_1] != E
+rule_434: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_1] != E
+rule_435: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_1] = I
+rule_436: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_2] != T
+rule_437: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_1] != C
+rule_438: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_2] != E
+rule_439: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_1] != T
+rule_440: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_1] = I
+rule_441: n[NODE_1] = I & n[NODE_2] = C -> n[NODE_2] != I
+rule_442: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_2] != C
+rule_443: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_2] != C
+rule_444: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_2] != C
+rule_445: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_1] = I
+rule_446: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_1] != C
+rule_447: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_2] != E
+rule_448: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_1] != T
+rule_449: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_1] = I
+rule_450: n[NODE_1] = I & n[NODE_2] = T -> n[NODE_2] != I
+rule_451: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_2] != T
+rule_452: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_2] != T
+rule_453: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_1] = I
+rule_454: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_1] != C
+rule_455: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_1] != C
+rule_456: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_1] = I
+rule_457: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_1] != T
+rule_458: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_1] = I
+rule_459: n[NODE_1] = I & n[NODE_2] = E -> n[NODE_2] != I
+rule_460: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_2] != E
+rule_461: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_1] = I
+rule_462: n[NODE_1] = I & n[NODE_2] = I -> n[NODE_1] != T
+rule_463: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_1] = I
+rule_464: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_1] = T
+rule_465: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_1] != I
+rule_466: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_1] = T
+rule_467: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_1] != I
+rule_468: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_1] = T
+rule_469: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_1] != I
+rule_470: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_1] != E
+rule_471: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_1] != E
+rule_472: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_1] != E
+rule_473: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_2] != T
+rule_474: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_1] != C
+rule_475: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_2] != E
+rule_476: n[NODE_1] = T & n[NODE_2] = C -> n[NODE_2] != I
+rule_477: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_2] != C
+rule_478: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_2] != C
+rule_479: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_1] != C
+rule_480: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_2] != E
+rule_481: n[NODE_1] = T & n[NODE_2] = T -> n[NODE_2] != I
+rule_482: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_2] != T
+rule_483: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_1] != C
+rule_484: n[NODE_2] = E & n[NODE_1] = T -> n[NODE_2] != I
+rule_485: n[NODE_1] = I & n[NODE_2] != C -> n[NODE_1] != E
+rule_486: n[NODE_1] = I & n[NODE_2] != T -> n[NODE_1] != E
+rule_487: n[NODE_1] = I & n[NODE_1] != E -> n[NODE_1] != C
+rule_488: n[NODE_1] = I & n[NODE_1] != C -> n[NODE_1] != E
+rule_489: n[NODE_1] = I & n[NODE_2] != E -> n[NODE_1] != E
+rule_490: n[NODE_1] = I & n[NODE_1] != E -> n[NODE_1] != T
+rule_491: n[NODE_1] = I & n[NODE_1] != T -> n[NODE_1] != E
+rule_492: n[NODE_1] != E & n[NODE_1] != T -> n[NODE_1] = I
+rule_493: n[NODE_1] = I & n[NODE_2] != I -> n[NODE_1] != E
+rule_494: n[NODE_1] = I & n[NODE_2] != C -> n[NODE_1] != C
+rule_495: n[NODE_1] = I & n[NODE_2] != C -> n[NODE_1] != T
+rule_496: n[NODE_2] != C & n[NODE_1] != T -> n[NODE_1] = I
+rule_497: n[NODE_1] = I & n[NODE_2] != T -> n[NODE_1] != C
+rule_498: n[NODE_1] = I & n[NODE_2] != T -> n[NODE_1] != T
+rule_499: n[NODE_2] != T & n[NODE_1] != T -> n[NODE_1] = I
+rule_500: n[NODE_1] = I & n[NODE_2] != E -> n[NODE_1] != C
+rule_501: n[NODE_1] = I & n[NODE_1] != T -> n[NODE_1] != C
+rule_502: n[NODE_1] = I & n[NODE_1] != C -> n[NODE_1] != T
+rule_503: n[NODE_1] != C & n[NODE_1] != T -> n[NODE_1] = I
+rule_504: n[NODE_1] = I & n[NODE_2] != I -> n[NODE_1] != C
+rule_505: n[NODE_1] = I & n[NODE_2] != E -> n[NODE_1] != T
+rule_506: n[NODE_1] != T & n[NODE_2] != E -> n[NODE_1] = I
+rule_507: n[NODE_1] = I & n[NODE_2] != I -> n[NODE_1] != T
+rule_508: n[NODE_2] != I & n[NODE_1] != T -> n[NODE_1] = I
+rule_509: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_1] != E
+rule_510: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_1] != E
+rule_511: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_1] != E
+rule_512: n[NODE_1] != I & n[NODE_1] != E -> n[NODE_1] = T
+rule_513: n[NODE_1] != I & n[NODE_1] = T -> n[NODE_1] != E
+rule_514: n[NODE_1] = T & n[NODE_1] != E -> n[NODE_1] != I
+rule_515: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_2] != T
+rule_516: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_1] != C
+rule_517: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_2] != E
+rule_518: n[NODE_1] != I & n[NODE_2] = C -> n[NODE_2] != I
+rule_519: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_2] != C
+rule_520: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_2] != C
+rule_521: n[NODE_1] != I & n[NODE_2] != C -> n[NODE_1] = T
+rule_522: n[NODE_1] = T & n[NODE_2] != C -> n[NODE_1] != I
+rule_523: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_1] != C
+rule_524: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_2] != E
+rule_525: n[NODE_1] != I & n[NODE_2] = T -> n[NODE_2] != I
+rule_526: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_2] != T
+rule_527: n[NODE_1] != I & n[NODE_2] != T -> n[NODE_1] = T
+rule_528: n[NODE_1] = T & n[NODE_2] != T -> n[NODE_1] != I
+rule_529: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_1] != C
+rule_530: n[NODE_1] != I & n[NODE_1] = T -> n[NODE_1] != C
+rule_531: n[NODE_1] != C & n[NODE_1] != I -> n[NODE_1] = T
+rule_532: n[NODE_1] != C & n[NODE_1] = T -> n[NODE_1] != I
+rule_533: n[NODE_1] != I & n[NODE_2] = E -> n[NODE_2] != I
+rule_534: n[NODE_1] != I & n[NODE_2] != E -> n[NODE_1] = T
+rule_535: n[NODE_1] = T & n[NODE_2] != E -> n[NODE_1] != I
+rule_536: n[NODE_1] != I & n[NODE_1] = T -> n[NODE_2] != I
+rule_537: n[NODE_1] != I & n[NODE_2] != I -> n[NODE_1] = T
+rule_538: n[NODE_1] = T & n[NODE_2] != I -> n[NODE_1] != I
+rule_539: n[NODE_1] != E & n[NODE_2] = C -> n[NODE_2] != T
+rule_540: n[NODE_2] != T & n[NODE_2] = C -> n[NODE_1] != E
+rule_541: n[NODE_1] != E & n[NODE_2] = C -> n[NODE_1] != C
+rule_542: n[NODE_1] != C & n[NODE_2] = C -> n[NODE_1] != E
+rule_543: n[NODE_1] != E & n[NODE_2] = C -> n[NODE_2] != E
+rule_544: n[NODE_2] = C & n[NODE_2] != E -> n[NODE_1] != E
+rule_545: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_1] != E
+rule_546: n[NODE_2] = C & n[NODE_2] != I -> n[NODE_1] != E
+rule_547: n[NODE_1] != E & n[NODE_2] = C -> n[NODE_2] != I
+rule_548: n[NODE_1] != E & n[NODE_2] = T -> n[NODE_2] != C
+rule_549: n[NODE_2] = T & n[NODE_2] != C -> n[NODE_1] != E
+rule_550: n[NODE_2] = E & n[NODE_1] != E -> n[NODE_2] != C
+rule_551: n[NODE_2] = E & n[NODE_2] != C -> n[NODE_1] != E
+rule_552: n[NODE_1] = T & n[NODE_2] != C -> n[NODE_1] != E
+rule_553: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_2] != C
+rule_554: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_1] != E
+rule_555: n[NODE_1] != E & n[NODE_2] = T -> n[NODE_1] != C
+rule_556: n[NODE_1] != C & n[NODE_2] = T -> n[NODE_1] != E
+rule_557: n[NODE_1] != E & n[NODE_2] = T -> n[NODE_2] != E
+rule_558: n[NODE_2] = T & n[NODE_2] != E -> n[NODE_1] != E
+rule_559: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_1] != E
+rule_560: n[NODE_2] = T & n[NODE_2] != I -> n[NODE_1] != E
+rule_561: n[NODE_1] != E & n[NODE_2] = T -> n[NODE_2] != I
+rule_562: n[NODE_2] = E & n[NODE_1] != E -> n[NODE_2] != T
+rule_563: n[NODE_2] = E & n[NODE_2] != T -> n[NODE_1] != E
+rule_564: n[NODE_1] = T & n[NODE_2] != T -> n[NODE_1] != E
+rule_565: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_2] != T
+rule_566: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_1] != E
+rule_567: n[NODE_2] = E & n[NODE_1] != E -> n[NODE_1] != C
+rule_568: n[NODE_1] != C & n[NODE_2] = E -> n[NODE_1] != E
+rule_569: n[NODE_1] = T & n[NODE_1] != E -> n[NODE_1] != C
+rule_570: n[NODE_1] != C & n[NODE_1] = T -> n[NODE_1] != E
+rule_571: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_1] != C
+rule_572: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_1] != E
+rule_573: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_1] != E
+rule_574: n[NODE_2] = E & n[NODE_2] != I -> n[NODE_1] != E
+rule_575: n[NODE_2] = E & n[NODE_1] != E -> n[NODE_2] != I
+rule_576: n[NODE_1] = T & n[NODE_2] != E -> n[NODE_1] != E
+rule_577: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_2] != E
+rule_578: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_1] != E
+rule_579: n[NODE_1] = T & n[NODE_2] != I -> n[NODE_1] != E
+rule_580: n[NODE_1] = T & n[NODE_1] != E -> n[NODE_2] != I
+rule_581: n[NODE_1] != E & n[NODE_2] = I -> n[NODE_1] != T
+rule_582: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_1] != E
+rule_583: n[NODE_2] != T & n[NODE_2] = C -> n[NODE_1] != C
+rule_584: n[NODE_1] != C & n[NODE_2] = C -> n[NODE_2] != T
+rule_585: n[NODE_2] = C & n[NODE_2] != E -> n[NODE_2] != T
+rule_586: n[NODE_2] != T & n[NODE_2] = C -> n[NODE_2] != E
+rule_587: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_2] != T
+rule_588: n[NODE_2] = C & n[NODE_2] != I -> n[NODE_2] != T
+rule_589: n[NODE_2] != T & n[NODE_2] = C -> n[NODE_2] != I
+rule_590: n[NODE_2] = C & n[NODE_2] != E -> n[NODE_1] != C
+rule_591: n[NODE_1] != C & n[NODE_2] = C -> n[NODE_2] != E
+rule_592: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_1] != C
+rule_593: n[NODE_2] = C & n[NODE_2] != I -> n[NODE_1] != C
+rule_594: n[NODE_1] != C & n[NODE_2] = C -> n[NODE_2] != I
+rule_595: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_2] != E
+rule_596: n[NODE_2] = C & n[NODE_2] != I -> n[NODE_2] != E
+rule_597: n[NODE_2] = C & n[NODE_2] != E -> n[NODE_2] != I
+rule_598: n[NODE_2] = C & n[NODE_1] != T -> n[NODE_2] != I
+rule_599: n[NODE_2] = T & n[NODE_2] != C -> n[NODE_1] != C
+rule_600: n[NODE_1] != C & n[NODE_2] = T -> n[NODE_2] != C
+rule_601: n[NODE_2] = T & n[NODE_2] != E -> n[NODE_2] != C
+rule_602: n[NODE_2] = T & n[NODE_2] != C -> n[NODE_2] != E
+rule_603: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_2] != C
+rule_604: n[NODE_2] = T & n[NODE_2] != I -> n[NODE_2] != C
+rule_605: n[NODE_2] = T & n[NODE_2] != C -> n[NODE_2] != I
+rule_606: n[NODE_2] = E & n[NODE_2] != C -> n[NODE_2] != T
+rule_607: n[NODE_2] = E & n[NODE_2] != T -> n[NODE_2] != C
+rule_608: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_2] != T
+rule_609: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_2] != C
+rule_610: n[NODE_2] = E & n[NODE_2] != C -> n[NODE_1] != C
+rule_611: n[NODE_1] != C & n[NODE_2] = E -> n[NODE_2] != C
+rule_612: n[NODE_1] = T & n[NODE_2] != C -> n[NODE_1] != C
+rule_613: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_1] != C
+rule_614: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_2] != C
+rule_615: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_2] != C
+rule_616: n[NODE_2] = E & n[NODE_2] != I -> n[NODE_2] != C
+rule_617: n[NODE_2] = E & n[NODE_2] != C -> n[NODE_2] != I
+rule_618: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_2] != E
+rule_619: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_2] != C
+rule_620: n[NODE_1] = T & n[NODE_2] != C -> n[NODE_2] != I
+rule_621: n[NODE_2] = I & n[NODE_2] != C -> n[NODE_1] != T
+rule_622: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_2] != C
+rule_623: n[NODE_2] = T & n[NODE_2] != E -> n[NODE_1] != C
+rule_624: n[NODE_1] != C & n[NODE_2] = T -> n[NODE_2] != E
+rule_625: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_1] != C
+rule_626: n[NODE_2] = T & n[NODE_2] != I -> n[NODE_1] != C
+rule_627: n[NODE_1] != C & n[NODE_2] = T -> n[NODE_2] != I
+rule_628: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_2] != E
+rule_629: n[NODE_2] = T & n[NODE_2] != I -> n[NODE_2] != E
+rule_630: n[NODE_2] = T & n[NODE_2] != E -> n[NODE_2] != I
+rule_631: n[NODE_2] = T & n[NODE_1] != T -> n[NODE_2] != I
+rule_632: n[NODE_2] = E & n[NODE_2] != T -> n[NODE_1] != C
+rule_633: n[NODE_1] != C & n[NODE_2] = E -> n[NODE_2] != T
+rule_634: n[NODE_1] = T & n[NODE_2] != T -> n[NODE_1] != C
+rule_635: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_1] != C
+rule_636: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_2] != T
+rule_637: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_2] != T
+rule_638: n[NODE_2] = E & n[NODE_2] != I -> n[NODE_2] != T
+rule_639: n[NODE_2] = E & n[NODE_2] != T -> n[NODE_2] != I
+rule_640: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_2] != T
+rule_641: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_2] != E
+rule_642: n[NODE_1] = T & n[NODE_2] != T -> n[NODE_2] != I
+rule_643: n[NODE_2] != T & n[NODE_2] = I -> n[NODE_1] != T
+rule_644: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_2] != T
+rule_645: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_1] != C
+rule_646: n[NODE_2] = E & n[NODE_2] != I -> n[NODE_1] != C
+rule_647: n[NODE_1] != C & n[NODE_2] = E -> n[NODE_2] != I
+rule_648: n[NODE_1] = T & n[NODE_2] != E -> n[NODE_1] != C
+rule_649: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_1] != C
+rule_650: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_2] != E
+rule_651: n[NODE_1] = T & n[NODE_2] != I -> n[NODE_1] != C
+rule_652: n[NODE_1] != C & n[NODE_1] = T -> n[NODE_2] != I
+rule_653: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_1] != C
+rule_654: n[NODE_1] != C & n[NODE_2] = I -> n[NODE_1] != T
+rule_655: n[NODE_2] = E & n[NODE_1] != T -> n[NODE_2] != I
+rule_656: n[NODE_1] = T & n[NODE_2] != E -> n[NODE_2] != I
+rule_657: n[NODE_2] = I & n[NODE_2] != E -> n[NODE_1] != T
+rule_658: n[NODE_2] = I & n[NODE_1] != T -> n[NODE_2] != E
+rule_659: n[NODE_1] != I & n[NODE_2] != C -> n[NODE_1] != E
+rule_660: n[NODE_1] != I & n[NODE_2] != T -> n[NODE_1] != E
+rule_661: n[NODE_1] != I & n[NODE_1] != E -> n[NODE_1] != C
+rule_662: n[NODE_1] != C & n[NODE_1] != I -> n[NODE_1] != E
+rule_663: n[NODE_1] != I & n[NODE_2] != E -> n[NODE_1] != E
+rule_664: n[NODE_1] != I & n[NODE_1] != E -> n[NODE_2] != I
+rule_665: n[NODE_1] != I & n[NODE_2] != I -> n[NODE_1] != E
+rule_666: n[NODE_1] != I & n[NODE_2] != C -> n[NODE_1] != C
+rule_667: n[NODE_1] != I & n[NODE_2] != C -> n[NODE_2] != I
+rule_668: n[NODE_1] != I & n[NODE_2] != T -> n[NODE_1] != C
+rule_669: n[NODE_1] != I & n[NODE_2] != T -> n[NODE_2] != I
+rule_670: n[NODE_1] != I & n[NODE_2] != E -> n[NODE_1] != C
+rule_671: n[NODE_1] != I & n[NODE_2] != I -> n[NODE_1] != C
+rule_672: n[NODE_1] != C & n[NODE_1] != I -> n[NODE_2] != I
+rule_673: n[NODE_1] != I & n[NODE_2] != E -> n[NODE_2] != I
+rule_674: n[NODE_2] != T & n[NODE_2] != C -> n[NODE_1] != E
+rule_675: n[NODE_1] != E & n[NODE_2] != C -> n[NODE_1] != C
+rule_676: n[NODE_1] != C & n[NODE_2] != C -> n[NODE_1] != E
+rule_677: n[NODE_2] != C & n[NODE_2] != E -> n[NODE_1] != E
+rule_678: n[NODE_2] != C & n[NODE_1] != T -> n[NODE_1] != E
+rule_679: n[NODE_2] != C & n[NODE_2] != I -> n[NODE_1] != E
+rule_680: n[NODE_1] != E & n[NODE_2] != T -> n[NODE_1] != C
+rule_681: n[NODE_1] != C & n[NODE_2] != T -> n[NODE_1] != E
+rule_682: n[NODE_2] != T & n[NODE_2] != E -> n[NODE_1] != E
+rule_683: n[NODE_2] != T & n[NODE_1] != T -> n[NODE_1] != E
+rule_684: n[NODE_2] != T & n[NODE_2] != I -> n[NODE_1] != E
+rule_685: n[NODE_1] != E & n[NODE_2] != E -> n[NODE_1] != C
+rule_686: n[NODE_1] != C & n[NODE_2] != E -> n[NODE_1] != E
+rule_687: n[NODE_1] != E & n[NODE_1] != T -> n[NODE_1] != C
+rule_688: n[NODE_1] != C & n[NODE_1] != T -> n[NODE_1] != E
+rule_689: n[NODE_1] != E & n[NODE_2] != I -> n[NODE_1] != C
+rule_690: n[NODE_1] != C & n[NODE_2] != I -> n[NODE_1] != E
+rule_691: n[NODE_1] != T & n[NODE_2] != E -> n[NODE_1] != E
+rule_692: n[NODE_2] != I & n[NODE_2] != E -> n[NODE_1] != E
+rule_693: n[NODE_2] != I & n[NODE_1] != T -> n[NODE_1] != E
+rule_694: n[NODE_2] != T & n[NODE_2] != C -> n[NODE_1] != C
+rule_695: n[NODE_2] != C & n[NODE_2] != E -> n[NODE_1] != C
+rule_696: n[NODE_2] != C & n[NODE_1] != T -> n[NODE_1] != C
+rule_697: n[NODE_2] != C & n[NODE_2] != I -> n[NODE_1] != C
+rule_698: n[NODE_2] != T & n[NODE_2] != E -> n[NODE_1] != C
+rule_699: n[NODE_2] != T & n[NODE_1] != T -> n[NODE_1] != C
+rule_700: n[NODE_2] != T & n[NODE_2] != I -> n[NODE_1] != C
+rule_701: n[NODE_1] != T & n[NODE_2] != E -> n[NODE_1] != C
+rule_702: n[NODE_2] != I & n[NODE_2] != E -> n[NODE_1] != C
+rule_703: n[NODE_2] != I & n[NODE_1] != T -> n[NODE_1] != C

@@ -1,0 +1,701 @@
+rule_1: a[NODE_1] = M -> a[NODE_2] = I
+rule_2: a[NODE_1] = E -> a[NODE_2] = I
+rule_3: a[NODE_1] = I -> a[NODE_2] = I
+rule_4: a[NODE_2] != I -> a[NODE_2] = S
+rule_5: a[NODE_2] = S -> a[NODE_2] != I
+rule_6: a[NODE_2] = I -> a[NODE_2] != S
+rule_7: a[NODE_2] != S -> a[NODE_2] = I
+rule_8: a[NODE_2] = I -> a[NODE_2] != E
+rule_9: a[NODE_2] = I -> a[NODE_2] != M
+rule_10: a[NODE_1] = M -> a[NODE_2] != S
+rule_11: a[NODE_1] = E -> a[NODE_2] != S
+rule_12: a[NODE_1] = I -> a[NODE_2] != S
+rule_13: a[NODE_2] = S -> a[NODE_1] != M
+rule_14: a[NODE_2] = S -> a[NODE_2] != E
+rule_15: a[NODE_2] = S -> a[NODE_2] != M
+rule_16: a[NODE_2] = S -> a[NODE_1] != E
+rule_17: a[NODE_2] = S -> a[NODE_1] != I
+rule_18: a[NODE_1] = E -> a[NODE_1] != M
+rule_19: a[NODE_1] = S -> a[NODE_1] != M
+rule_20: a[NODE_1] = I -> a[NODE_1] != M
+rule_21: a[NODE_1] = M -> a[NODE_2] != E
+rule_22: a[NODE_1] = M -> a[NODE_2] != M
+rule_23: a[NODE_1] = M -> a[NODE_1] != E
+rule_24: a[NODE_1] = M -> a[NODE_1] != S
+rule_25: a[NODE_1] = M -> a[NODE_1] != I
+rule_26: a[NODE_1] = E -> a[NODE_2] != E
+rule_27: a[NODE_1] = S -> a[NODE_2] != E
+rule_28: a[NODE_1] = I -> a[NODE_2] != E
+rule_29: a[NODE_1] = E -> a[NODE_2] != M
+rule_30: a[NODE_1] = S -> a[NODE_2] != M
+rule_31: a[NODE_1] = I -> a[NODE_2] != M
+rule_32: a[NODE_1] = S -> a[NODE_1] != E
+rule_33: a[NODE_1] = I -> a[NODE_1] != E
+rule_34: a[NODE_1] = E -> a[NODE_1] != S
+rule_35: a[NODE_1] = E -> a[NODE_1] != I
+rule_36: a[NODE_1] = I -> a[NODE_1] != S
+rule_37: a[NODE_1] = S -> a[NODE_1] != I
+rule_38: a[NODE_2] != I -> a[NODE_1] != M
+rule_39: a[NODE_2] != I -> a[NODE_2] != E
+rule_40: a[NODE_2] != I -> a[NODE_2] != M
+rule_41: a[NODE_2] != I -> a[NODE_1] != E
+rule_42: a[NODE_2] != I -> a[NODE_1] != I
+rule_43: a[NODE_2] != S -> a[NODE_2] != E
+rule_44: a[NODE_2] != S -> a[NODE_2] != M
+rule_45: a[NODE_1] != M -> a[NODE_2] != E
+rule_46: a[NODE_1] != M -> a[NODE_2] != M
+rule_47: a[NODE_2] != M -> a[NODE_2] != E
+rule_48: a[NODE_2] != E -> a[NODE_2] != M
+rule_49: a[NODE_1] != E -> a[NODE_2] != E
+rule_50: a[NODE_1] != S -> a[NODE_2] != E
+rule_51: a[NODE_1] != I -> a[NODE_2] != E
+rule_52: a[NODE_1] != E -> a[NODE_2] != M
+rule_53: a[NODE_1] != S -> a[NODE_2] != M
+rule_54: a[NODE_1] != I -> a[NODE_2] != M
+rule_55: a[NODE_1] = OSTATUS -> a[NODE_2] = S
+rule_56: a[NODE_1] = OSTATUS -> a[NODE_2] != I
+rule_57: a[NODE_2] = I -> a[NODE_2] != OSTATUS
+rule_58: a[NODE_2] = I -> a[NODE_1] != OSTATUS
+rule_59: a[NODE_2] = S -> a[NODE_2] != OSTATUS
+rule_60: a[NODE_1] = OSTATUS -> a[NODE_1] != M
+rule_61: a[NODE_1] = M -> a[NODE_2] != OSTATUS
+rule_62: a[NODE_1] = M -> a[NODE_1] != OSTATUS
+rule_63: a[NODE_1] = E -> a[NODE_2] != OSTATUS
+rule_64: a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_65: a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_66: a[NODE_1] = OSTATUS -> a[NODE_2] != E
+rule_67: a[NODE_1] = OSTATUS -> a[NODE_2] != M
+rule_68: a[NODE_1] = OSTATUS -> a[NODE_1] != E
+rule_69: a[NODE_1] = E -> a[NODE_1] != OSTATUS
+rule_70: a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_71: a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_72: a[NODE_1] = OSTATUS -> a[NODE_1] != S
+rule_73: a[NODE_1] = OSTATUS -> a[NODE_1] != I
+rule_74: a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_75: a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_76: a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_77: a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_78: a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_79: a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_80: a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_81: a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_82: a[NODE_1] != E -> a[NODE_2] != OSTATUS
+rule_83: a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_84: a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_85: a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_86: a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_87: a[NODE_1] = OSTATUS -> a[NODE_2] != OSTATUS
+rule_88: a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_89: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_2] = S
+rule_90: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_2] != I
+rule_91: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_2] != S
+rule_92: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_2] = I
+rule_93: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_2] != S
+rule_94: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_2] = I
+rule_95: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_2] != S
+rule_96: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_2] = I
+rule_97: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_2] != S
+rule_98: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_2] = I
+rule_99: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_1] != M
+rule_100: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_2] = I
+rule_101: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_1] != M
+rule_102: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_1] != M
+rule_103: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_2] = I
+rule_104: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_2] != E
+rule_105: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_2] = I
+rule_106: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_2] = I
+rule_107: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_2] != M
+rule_108: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_1] != E
+rule_109: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_2] = I
+rule_110: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_1] != S
+rule_111: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_2] = I
+rule_112: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_1] != I
+rule_113: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_2] = I
+rule_114: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_2] != E
+rule_115: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_2] = I
+rule_116: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_2] != E
+rule_117: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_2] != E
+rule_118: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_2] = I
+rule_119: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_2] = I
+rule_120: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_2] != M
+rule_121: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_2] != M
+rule_122: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_2] = I
+rule_123: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_2] != M
+rule_124: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_1] != E
+rule_125: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_1] != E
+rule_126: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_2] = I
+rule_127: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_1] != S
+rule_128: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_2] = I
+rule_129: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_1] != I
+rule_130: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_2] = I
+rule_131: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_1] != S
+rule_132: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_2] = I
+rule_133: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_1] != I
+rule_134: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_1] != M
+rule_135: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_2] != E
+rule_136: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_2] != M
+rule_137: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_1] != E
+rule_138: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_1] != I
+rule_139: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_1] != M
+rule_140: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_2] = S
+rule_141: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_2] != I
+rule_142: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_2] != E
+rule_143: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_2] = S
+rule_144: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_2] != I
+rule_145: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_2] = S
+rule_146: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_2] != M
+rule_147: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_2] != I
+rule_148: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_2] = S
+rule_149: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_1] != E
+rule_150: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_2] != I
+rule_151: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_2] = S
+rule_152: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_2] != I
+rule_153: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_1] != I
+rule_154: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_2] = S
+rule_155: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_2] != I
+rule_156: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_1] != M
+rule_157: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_2] != E
+rule_158: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_2] != M
+rule_159: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_1] != E
+rule_160: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_1] != I
+rule_161: a[NODE_2] = I & a[NODE_1] != M -> a[NODE_2] != S
+rule_162: a[NODE_1] != M & a[NODE_2] != S -> a[NODE_2] = I
+rule_163: a[NODE_2] = I & a[NODE_2] != S -> a[NODE_2] != E
+rule_164: a[NODE_2] = I & a[NODE_2] != E -> a[NODE_2] != S
+rule_165: a[NODE_2] != E & a[NODE_2] != S -> a[NODE_2] = I
+rule_166: a[NODE_2] = I & a[NODE_2] != M -> a[NODE_2] != S
+rule_167: a[NODE_2] != M & a[NODE_2] != S -> a[NODE_2] = I
+rule_168: a[NODE_2] = I & a[NODE_2] != S -> a[NODE_2] != M
+rule_169: a[NODE_2] = I & a[NODE_1] != E -> a[NODE_2] != S
+rule_170: a[NODE_1] != E & a[NODE_2] != S -> a[NODE_2] = I
+rule_171: a[NODE_2] = I & a[NODE_1] != S -> a[NODE_2] != S
+rule_172: a[NODE_1] != S & a[NODE_2] != S -> a[NODE_2] = I
+rule_173: a[NODE_2] = I & a[NODE_1] != I -> a[NODE_2] != S
+rule_174: a[NODE_1] != I & a[NODE_2] != S -> a[NODE_2] = I
+rule_175: a[NODE_2] = I & a[NODE_1] != M -> a[NODE_2] != E
+rule_176: a[NODE_2] = I & a[NODE_1] != M -> a[NODE_2] != M
+rule_177: a[NODE_2] = I & a[NODE_2] != M -> a[NODE_2] != E
+rule_178: a[NODE_2] = I & a[NODE_2] != E -> a[NODE_2] != M
+rule_179: a[NODE_2] = I & a[NODE_1] != E -> a[NODE_2] != E
+rule_180: a[NODE_2] = I & a[NODE_1] != S -> a[NODE_2] != E
+rule_181: a[NODE_2] = I & a[NODE_1] != I -> a[NODE_2] != E
+rule_182: a[NODE_2] = I & a[NODE_1] != E -> a[NODE_2] != M
+rule_183: a[NODE_2] = I & a[NODE_1] != S -> a[NODE_2] != M
+rule_184: a[NODE_2] = I & a[NODE_1] != I -> a[NODE_2] != M
+rule_185: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_1] != M
+rule_186: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_2] != S
+rule_187: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_1] != M
+rule_188: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_1] != M
+rule_189: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_2] != S
+rule_190: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_2] != E
+rule_191: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_2] != S
+rule_192: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_2] != S
+rule_193: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_2] != M
+rule_194: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_2] != S
+rule_195: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_1] != E
+rule_196: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_1] != S
+rule_197: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_2] != S
+rule_198: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_1] != I
+rule_199: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_2] != S
+rule_200: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_2] != E
+rule_201: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_2] != S
+rule_202: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_2] != E
+rule_203: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_2] != E
+rule_204: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_2] != S
+rule_205: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_2] != S
+rule_206: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_2] != M
+rule_207: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_2] != M
+rule_208: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_2] != S
+rule_209: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_2] != M
+rule_210: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_1] != E
+rule_211: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_2] != S
+rule_212: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_1] != E
+rule_213: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_1] != S
+rule_214: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_2] != S
+rule_215: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_1] != I
+rule_216: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_2] != S
+rule_217: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_1] != S
+rule_218: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_2] != S
+rule_219: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_1] != I
+rule_220: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_2] != E
+rule_221: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_1] != M
+rule_222: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_1] != M
+rule_223: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_2] != M
+rule_224: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_1] != M
+rule_225: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_1] != E
+rule_226: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_1] != M
+rule_227: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_1] != I
+rule_228: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_1] != M
+rule_229: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_2] != E
+rule_230: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_2] != M
+rule_231: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_2] != E
+rule_232: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_1] != E
+rule_233: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_2] != E
+rule_234: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_2] != E
+rule_235: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_1] != I
+rule_236: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_1] != E
+rule_237: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_2] != M
+rule_238: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_2] != M
+rule_239: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_1] != I
+rule_240: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_2] != M
+rule_241: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_1] != E
+rule_242: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_1] != I
+rule_243: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_1] != E
+rule_244: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_1] != I
+rule_245: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_2] != E
+rule_246: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_1] != M
+rule_247: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_2] != E
+rule_248: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_1] != M
+rule_249: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_2] != E
+rule_250: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_1] != M
+rule_251: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_1] != M
+rule_252: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_2] != M
+rule_253: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_1] != M
+rule_254: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_2] != M
+rule_255: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_1] != M
+rule_256: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_2] != M
+rule_257: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_1] != M
+rule_258: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_1] != E
+rule_259: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_1] != M
+rule_260: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_1] != E
+rule_261: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_1] != S
+rule_262: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_1] != M
+rule_263: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_1] != I
+rule_264: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_1] != M
+rule_265: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_1] != S
+rule_266: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_1] != M
+rule_267: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_1] != I
+rule_268: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_1] != M
+rule_269: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_2] != E
+rule_270: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_2] != M
+rule_271: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_2] != E
+rule_272: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_1] != E
+rule_273: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_2] != E
+rule_274: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_1] != S
+rule_275: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_2] != E
+rule_276: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_1] != I
+rule_277: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_1] != E
+rule_278: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_2] != M
+rule_279: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_1] != S
+rule_280: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_2] != M
+rule_281: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_1] != I
+rule_282: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_2] != M
+rule_283: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_1] != S
+rule_284: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_1] != E
+rule_285: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_1] != I
+rule_286: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_1] != E
+rule_287: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_1] != I
+rule_288: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_1] != S
+rule_289: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_2] != E
+rule_290: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_2] != M
+rule_291: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_2] != E
+rule_292: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_2] != M
+rule_293: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_2] != E
+rule_294: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_2] != M
+rule_295: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_2] != E
+rule_296: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_1] != E
+rule_297: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_2] != E
+rule_298: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_1] != E
+rule_299: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_2] != E
+rule_300: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_1] != S
+rule_301: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_2] != E
+rule_302: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_1] != I
+rule_303: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_2] != E
+rule_304: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_1] != S
+rule_305: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_2] != E
+rule_306: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_1] != I
+rule_307: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_1] != E
+rule_308: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_2] != M
+rule_309: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_1] != E
+rule_310: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_2] != M
+rule_311: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_1] != S
+rule_312: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_2] != M
+rule_313: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_1] != I
+rule_314: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_2] != M
+rule_315: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_1] != S
+rule_316: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_2] != M
+rule_317: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_1] != I
+rule_318: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_2] != M
+rule_319: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_1] != S
+rule_320: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_1] != E
+rule_321: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_1] != I
+rule_322: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_1] != E
+rule_323: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_1] != I
+rule_324: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_1] != S
+rule_325: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_2] != E
+rule_326: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_1] != M
+rule_327: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_1] != M
+rule_328: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_2] != M
+rule_329: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_1] != M
+rule_330: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_1] != E
+rule_331: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_1] != M
+rule_332: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_1] != I
+rule_333: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_1] != M
+rule_334: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_2] != E
+rule_335: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_2] != M
+rule_336: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_2] != E
+rule_337: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_1] != E
+rule_338: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_2] != E
+rule_339: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_2] != E
+rule_340: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_1] != I
+rule_341: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_1] != E
+rule_342: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_2] != M
+rule_343: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_2] != M
+rule_344: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_1] != I
+rule_345: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_2] != M
+rule_346: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_1] != E
+rule_347: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_1] != I
+rule_348: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_1] != E
+rule_349: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_1] != I
+rule_350: a[NODE_1] != M & a[NODE_2] != S -> a[NODE_2] != E
+rule_351: a[NODE_1] != M & a[NODE_2] != S -> a[NODE_2] != M
+rule_352: a[NODE_2] != M & a[NODE_2] != S -> a[NODE_2] != E
+rule_353: a[NODE_2] != E & a[NODE_2] != S -> a[NODE_2] != M
+rule_354: a[NODE_1] != E & a[NODE_2] != S -> a[NODE_2] != E
+rule_355: a[NODE_1] != S & a[NODE_2] != S -> a[NODE_2] != E
+rule_356: a[NODE_1] != I & a[NODE_2] != S -> a[NODE_2] != E
+rule_357: a[NODE_1] != E & a[NODE_2] != S -> a[NODE_2] != M
+rule_358: a[NODE_1] != S & a[NODE_2] != S -> a[NODE_2] != M
+rule_359: a[NODE_1] != I & a[NODE_2] != S -> a[NODE_2] != M
+rule_360: a[NODE_1] != M & a[NODE_2] != M -> a[NODE_2] != E
+rule_361: a[NODE_2] != E & a[NODE_1] != M -> a[NODE_2] != M
+rule_362: a[NODE_1] != E & a[NODE_1] != M -> a[NODE_2] != E
+rule_363: a[NODE_1] != M & a[NODE_1] != S -> a[NODE_2] != E
+rule_364: a[NODE_1] != M & a[NODE_1] != I -> a[NODE_2] != E
+rule_365: a[NODE_1] != E & a[NODE_1] != M -> a[NODE_2] != M
+rule_366: a[NODE_1] != M & a[NODE_1] != S -> a[NODE_2] != M
+rule_367: a[NODE_1] != M & a[NODE_1] != I -> a[NODE_2] != M
+rule_368: a[NODE_1] != E & a[NODE_2] != M -> a[NODE_2] != E
+rule_369: a[NODE_1] != E & a[NODE_2] != E -> a[NODE_2] != M
+rule_370: a[NODE_1] != S & a[NODE_2] != M -> a[NODE_2] != E
+rule_371: a[NODE_2] != E & a[NODE_1] != S -> a[NODE_2] != M
+rule_372: a[NODE_2] != M & a[NODE_1] != I -> a[NODE_2] != E
+rule_373: a[NODE_2] != E & a[NODE_1] != I -> a[NODE_2] != M
+rule_374: a[NODE_1] != E & a[NODE_1] != S -> a[NODE_2] != E
+rule_375: a[NODE_1] != E & a[NODE_1] != I -> a[NODE_2] != E
+rule_376: a[NODE_1] != S & a[NODE_1] != I -> a[NODE_2] != E
+rule_377: a[NODE_1] != E & a[NODE_1] != S -> a[NODE_2] != M
+rule_378: a[NODE_1] != E & a[NODE_1] != I -> a[NODE_2] != M
+rule_379: a[NODE_1] != S & a[NODE_1] != I -> a[NODE_2] != M
+rule_380: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_2] = S
+rule_381: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_2] != I
+rule_382: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_2] != OSTATUS
+rule_383: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_2] = I
+rule_384: a[NODE_2] = I & a[NODE_1] = M -> a[NODE_1] != OSTATUS
+rule_385: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_2] = I
+rule_386: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_2] != OSTATUS
+rule_387: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_2] = I
+rule_388: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_389: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_390: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_2] = I
+rule_391: a[NODE_2] = I & a[NODE_1] = E -> a[NODE_1] != OSTATUS
+rule_392: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_2] = I
+rule_393: a[NODE_2] = I & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_394: a[NODE_2] = I & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_395: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_2] = I
+rule_396: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_1] != M
+rule_397: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_2] = S
+rule_398: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_399: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_2] != E
+rule_400: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_2] = S
+rule_401: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_2] = S
+rule_402: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_2] != M
+rule_403: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_2] = S
+rule_404: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_1] != E
+rule_405: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_1] = S
+rule_406: a[NODE_2] = S & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_407: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_1] != S
+rule_408: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_1] = OSTATUS
+rule_409: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_2] = S
+rule_410: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_1] != I
+rule_411: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_2] = S
+rule_412: a[NODE_2] = S & a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_413: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_2] = S
+rule_414: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_2] != I
+rule_415: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_2] = S
+rule_416: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != I
+rule_417: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_1] != M
+rule_418: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_2] != I
+rule_419: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_420: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_2] != E
+rule_421: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_2] != I
+rule_422: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_2] != M
+rule_423: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_2] != I
+rule_424: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_1] != E
+rule_425: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_2] != I
+rule_426: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_1] = S
+rule_427: a[NODE_2] != I & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_428: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_1] != S
+rule_429: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_1] = OSTATUS
+rule_430: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_2] != I
+rule_431: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_1] != I
+rule_432: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_2] != I
+rule_433: a[NODE_2] = I & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_434: a[NODE_2] = I & a[NODE_2] != OSTATUS -> a[NODE_2] != S
+rule_435: a[NODE_2] != OSTATUS & a[NODE_2] != S -> a[NODE_2] = I
+rule_436: a[NODE_2] = I & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_437: a[NODE_2] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != S
+rule_438: a[NODE_1] != OSTATUS & a[NODE_2] != S -> a[NODE_2] = I
+rule_439: a[NODE_2] = I & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_440: a[NODE_2] = I & a[NODE_1] != M -> a[NODE_1] != OSTATUS
+rule_441: a[NODE_2] = I & a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_442: a[NODE_2] = I & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_443: a[NODE_2] = I & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_444: a[NODE_2] = I & a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_445: a[NODE_2] = I & a[NODE_1] != E -> a[NODE_2] != OSTATUS
+rule_446: a[NODE_2] = I & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_447: a[NODE_2] = I & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_448: a[NODE_2] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_449: a[NODE_2] = I & a[NODE_2] != E -> a[NODE_1] != OSTATUS
+rule_450: a[NODE_2] = I & a[NODE_2] != M -> a[NODE_1] != OSTATUS
+rule_451: a[NODE_2] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_452: a[NODE_2] = I & a[NODE_1] != E -> a[NODE_1] != OSTATUS
+rule_453: a[NODE_2] = I & a[NODE_1] != S -> a[NODE_1] != OSTATUS
+rule_454: a[NODE_1] != S & a[NODE_1] != OSTATUS -> a[NODE_2] = I
+rule_455: a[NODE_2] = I & a[NODE_1] != I -> a[NODE_1] != OSTATUS
+rule_456: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_457: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_2] != S
+rule_458: a[NODE_1] = M & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_459: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_2] != S
+rule_460: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_461: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_2] != S
+rule_462: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_463: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_464: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_2] != S
+rule_465: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_2] != S
+rule_466: a[NODE_1] = E & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_467: a[NODE_1] = S & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_468: a[NODE_1] = I & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_469: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != S
+rule_470: a[NODE_2] = S & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_471: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_1] != M
+rule_472: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != M
+rule_473: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_474: a[NODE_2] = S & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_475: a[NODE_2] = S & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_476: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_477: a[NODE_2] = S & a[NODE_1] != E -> a[NODE_2] != OSTATUS
+rule_478: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_1] != E
+rule_479: a[NODE_2] = S & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_480: a[NODE_2] = S & a[NODE_2] != OSTATUS -> a[NODE_1] != I
+rule_481: a[NODE_2] = S & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_482: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_483: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_484: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != E
+rule_485: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != I
+rule_486: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_487: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_1] != M
+rule_488: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_489: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_1] != M
+rule_490: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_491: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_1] != M
+rule_492: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_2] != E
+rule_493: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_1] != M
+rule_494: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_1] != M
+rule_495: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_2] != M
+rule_496: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_1] != M
+rule_497: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_1] != E
+rule_498: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_1] != M
+rule_499: a[NODE_1] = E & a[NODE_1] != M -> a[NODE_1] != OSTATUS
+rule_500: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != M
+rule_501: a[NODE_1] != M & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_502: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_1] != M
+rule_503: a[NODE_1] != M & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_504: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_1] != M
+rule_505: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_1] != S
+rule_506: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_1] != I
+rule_507: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_1] != M
+rule_508: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_2] != E
+rule_509: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_510: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_511: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_2] != M
+rule_512: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_2] != OSTATUS
+rule_513: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_1] != E
+rule_514: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_515: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_1] != S
+rule_516: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_1] != I
+rule_517: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_518: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_519: a[NODE_1] = M & a[NODE_2] != E -> a[NODE_1] != OSTATUS
+rule_520: a[NODE_1] = M & a[NODE_2] != M -> a[NODE_1] != OSTATUS
+rule_521: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_522: a[NODE_1] != E & a[NODE_1] = M -> a[NODE_1] != OSTATUS
+rule_523: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_1] != E
+rule_524: a[NODE_1] = M & a[NODE_1] != S -> a[NODE_1] != OSTATUS
+rule_525: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_1] != S
+rule_526: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_1] != I
+rule_527: a[NODE_1] = M & a[NODE_1] != I -> a[NODE_1] != OSTATUS
+rule_528: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_529: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_530: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_2] != E
+rule_531: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_532: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_2] != E
+rule_533: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_534: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_535: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_536: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_537: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_2] != M
+rule_538: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_539: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_2] != M
+rule_540: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_2] != OSTATUS
+rule_541: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_1] != E
+rule_542: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_543: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_1] != E
+rule_544: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_545: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_1] != S
+rule_546: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_1] != I
+rule_547: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_548: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_2] != OSTATUS
+rule_549: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_1] != S
+rule_550: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_551: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_1] != I
+rule_552: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_2] != E
+rule_553: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_2] != M
+rule_554: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_2] != E
+rule_555: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_1] != E
+rule_556: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_557: a[NODE_1] = E & a[NODE_2] != E -> a[NODE_1] != OSTATUS
+rule_558: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_559: a[NODE_2] != E & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_560: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_561: a[NODE_2] != E & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_562: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_2] != E
+rule_563: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_1] != S
+rule_564: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_2] != E
+rule_565: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_1] != I
+rule_566: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_1] != E
+rule_567: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_2] != M
+rule_568: a[NODE_1] = E & a[NODE_2] != M -> a[NODE_1] != OSTATUS
+rule_569: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_570: a[NODE_1] = S & a[NODE_2] != M -> a[NODE_1] != OSTATUS
+rule_571: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_572: a[NODE_2] != M & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_573: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_574: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_1] != S
+rule_575: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_2] != M
+rule_576: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_1] != I
+rule_577: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_2] != M
+rule_578: a[NODE_1] != E & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_579: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != E
+rule_580: a[NODE_1] != E & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_581: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_1] != E
+rule_582: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_1] != S
+rule_583: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_1] != E
+rule_584: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_1] != I
+rule_585: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_1] != E
+rule_586: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_1] != S
+rule_587: a[NODE_1] = E & a[NODE_1] != S -> a[NODE_1] != OSTATUS
+rule_588: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_1] != I
+rule_589: a[NODE_1] = E & a[NODE_1] != I -> a[NODE_1] != OSTATUS
+rule_590: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_1] != S
+rule_591: a[NODE_1] != S & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_592: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_1] != I
+rule_593: a[NODE_1] = S & a[NODE_1] != I -> a[NODE_1] != OSTATUS
+rule_594: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_1] != I
+rule_595: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_1] != S
+rule_596: a[NODE_1] != M & a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_597: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_1] != M
+rule_598: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_1] != M
+rule_599: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_2] != E
+rule_600: a[NODE_2] != E & a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_601: a[NODE_2] != I & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_602: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_2] != M
+rule_603: a[NODE_1] != E & a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_604: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_1] != E
+rule_605: a[NODE_2] != I & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_606: a[NODE_2] != OSTATUS & a[NODE_2] != I -> a[NODE_1] != I
+rule_607: a[NODE_2] != I & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_608: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_609: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_610: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_1] != E
+rule_611: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_1] != I
+rule_612: a[NODE_1] != M & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_613: a[NODE_1] != M & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_614: a[NODE_2] != OSTATUS & a[NODE_2] != S -> a[NODE_2] != E
+rule_615: a[NODE_2] != E & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_616: a[NODE_2] != M & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_617: a[NODE_2] != OSTATUS & a[NODE_2] != S -> a[NODE_2] != M
+rule_618: a[NODE_1] != E & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_619: a[NODE_1] != S & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_620: a[NODE_1] != I & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_621: a[NODE_1] != OSTATUS & a[NODE_2] != S -> a[NODE_2] != E
+rule_622: a[NODE_2] != E & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_623: a[NODE_2] != M & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_624: a[NODE_1] != OSTATUS & a[NODE_2] != S -> a[NODE_2] != M
+rule_625: a[NODE_1] != E & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_626: a[NODE_1] != S & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_627: a[NODE_1] != S & a[NODE_1] != OSTATUS -> a[NODE_2] != S
+rule_628: a[NODE_1] != I & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_629: a[NODE_2] != OSTATUS & a[NODE_1] != M -> a[NODE_2] != E
+rule_630: a[NODE_2] != E & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_631: a[NODE_1] != M & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_632: a[NODE_2] != OSTATUS & a[NODE_1] != M -> a[NODE_2] != M
+rule_633: a[NODE_1] != E & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_634: a[NODE_1] != M & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_635: a[NODE_1] != M & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_636: a[NODE_1] != M & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_637: a[NODE_1] != M & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_638: a[NODE_2] != OSTATUS & a[NODE_2] != M -> a[NODE_2] != E
+rule_639: a[NODE_2] != E & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_640: a[NODE_2] != OSTATUS & a[NODE_2] != E -> a[NODE_2] != M
+rule_641: a[NODE_1] != E & a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_642: a[NODE_1] != E & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_643: a[NODE_2] != OSTATUS & a[NODE_1] != S -> a[NODE_2] != E
+rule_644: a[NODE_2] != E & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_645: a[NODE_2] != OSTATUS & a[NODE_1] != I -> a[NODE_2] != E
+rule_646: a[NODE_2] != E & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_647: a[NODE_1] != E & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_648: a[NODE_1] != E & a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_649: a[NODE_1] != S & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_650: a[NODE_2] != OSTATUS & a[NODE_1] != S -> a[NODE_2] != M
+rule_651: a[NODE_2] != M & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_652: a[NODE_2] != OSTATUS & a[NODE_1] != I -> a[NODE_2] != M
+rule_653: a[NODE_1] != E & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_654: a[NODE_1] != E & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_655: a[NODE_1] != S & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_656: a[NODE_2] != M & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_657: a[NODE_2] != E & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_658: a[NODE_1] != E & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_659: a[NODE_1] != S & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_660: a[NODE_1] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_661: a[NODE_1] != E & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_662: a[NODE_1] != S & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_663: a[NODE_1] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_664: a[NODE_2] = S & a[NODE_1] = OSTATUS -> a[NODE_2] != OSTATUS
+rule_665: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_2] = S
+rule_666: a[NODE_1] = OSTATUS & a[NODE_2] != I -> a[NODE_2] != OSTATUS
+rule_667: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_2] != I
+rule_668: a[NODE_2] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_669: a[NODE_2] = I & a[NODE_2] != OSTATUS -> a[NODE_1] != OSTATUS
+rule_670: a[NODE_2] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_671: a[NODE_1] = OSTATUS & a[NODE_1] != M -> a[NODE_2] != OSTATUS
+rule_672: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_1] != M
+rule_673: a[NODE_1] = M & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_674: a[NODE_2] != OSTATUS & a[NODE_1] = M -> a[NODE_1] != OSTATUS
+rule_675: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_2] != E
+rule_676: a[NODE_1] = OSTATUS & a[NODE_2] != E -> a[NODE_2] != OSTATUS
+rule_677: a[NODE_1] = OSTATUS & a[NODE_2] != M -> a[NODE_2] != OSTATUS
+rule_678: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_2] != M
+rule_679: a[NODE_1] != E & a[NODE_1] = OSTATUS -> a[NODE_2] != OSTATUS
+rule_680: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_1] != E
+rule_681: a[NODE_1] = E & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_682: a[NODE_1] = E & a[NODE_2] != OSTATUS -> a[NODE_1] != OSTATUS
+rule_683: a[NODE_1] = S & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_684: a[NODE_2] != OSTATUS & a[NODE_1] = S -> a[NODE_1] != OSTATUS
+rule_685: a[NODE_1] = I & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_686: a[NODE_2] != OSTATUS & a[NODE_1] = I -> a[NODE_1] != OSTATUS
+rule_687: a[NODE_1] = OSTATUS & a[NODE_1] != S -> a[NODE_2] != OSTATUS
+rule_688: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_1] != S
+rule_689: a[NODE_1] = OSTATUS & a[NODE_2] != OSTATUS -> a[NODE_1] != I
+rule_690: a[NODE_1] = OSTATUS & a[NODE_1] != I -> a[NODE_2] != OSTATUS
+rule_691: a[NODE_2] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_692: a[NODE_1] != OSTATUS & a[NODE_2] != S -> a[NODE_2] != OSTATUS
+rule_693: a[NODE_2] != OSTATUS & a[NODE_2] != S -> a[NODE_1] != OSTATUS
+rule_694: a[NODE_1] != M & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_695: a[NODE_2] != OSTATUS & a[NODE_1] != OSTATUS -> a[NODE_2] != E
+rule_696: a[NODE_2] != E & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_697: a[NODE_2] != M & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_698: a[NODE_2] != OSTATUS & a[NODE_1] != OSTATUS -> a[NODE_2] != M
+rule_699: a[NODE_1] != E & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_700: a[NODE_1] != S & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS
+rule_701: a[NODE_1] != I & a[NODE_1] != OSTATUS -> a[NODE_2] != OSTATUS

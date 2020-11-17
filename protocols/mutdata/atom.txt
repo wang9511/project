@@ -1,0 +1,12 @@
+n[NODE_1].st = C
+n[NODE_1].st = E
+n[NODE_1].st = I
+n[NODE_1].st = T
+n[NODE_2].st = C
+n[NODE_2].st = E
+n[NODE_2].st = I
+n[NODE_2].st = T
+x = true
+x = false
+n[NODE_1].data = auxDATA
+n[NODE_2].data = auxDATA
